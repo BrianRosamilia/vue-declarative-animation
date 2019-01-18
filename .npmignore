@@ -5,3 +5,4 @@ coverage
 .idea
 .circleci
 server.js
+src/docs

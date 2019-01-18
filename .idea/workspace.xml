@@ -3,8 +3,78 @@
   <component name="ChangeListManager">
     <list default="true" id="12f1cf95-bcf4-4f24-bcf2-c46e976015ca" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/vue_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/script.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/side-menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/tabs-menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/top-menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/dist/sandbox-min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/dist/sandbox-min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/_breakpoint-values.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/_global-variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/a.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/headings.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/ul-ol.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/buttons/button-outlined.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/buttons/button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/buttons/buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/list-items.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/loading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/square.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/steps.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/tabs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/forms/addons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/forms/controls.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/forms/field.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/forms/icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/layout/flexbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/layout/grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/layout/position-presets.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/sandbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/themes/themes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/border.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/font-size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/height.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/img.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/overflow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/z-index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/zeroing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/about.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/application.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scripts/site.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="136">
+              <caret line="8" column="146" selection-start-line="8" selection-start-column="146" selection-end-line="8" selection-end-column="146" />
             </state>
           </provider>
         </entry>
@@ -51,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/browserBuild.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -60,19 +130,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="8400" selection-start-line="3" selection-start-column="8396" selection-end-line="3" selection-end-column="8400" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -84,7 +145,19 @@
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/docs/scripts/home.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+              <folding>
+                <element signature="e#6578#6624#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,7 +165,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/animated.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
+            <state relative-caret-position="-58">
               <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
             </state>
           </provider>
@@ -101,17 +174,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.npmignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/scripts/home.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="189" column="10" lean-forward="true" selection-start-line="185" selection-start-column="7" selection-end-line="189" selection-end-column="10" />
+            <state relative-caret-position="119">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -148,8 +212,8 @@
       <find>animated</find>
       <find>completed</find>
       <find>ease</find>
-      <find>no-useless</find>
       <find>codeToggle</find>
+      <find>no-useless</find>
     </findStrings>
     <dirStrings>
       <dir>D:\logo\public2\materialize-css</dir>
@@ -165,7 +229,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/materialize-css/package.json" />
         <option value="$PROJECT_DIR$/public/materialize-css/sass/components/_variables.scss" />
         <option value="$PROJECT_DIR$/public/materialize-css/sass/materialize.scss" />
         <option value="$PROJECT_DIR$/public/materialize-css/dist/css/materialize.css" />
@@ -206,16 +269,17 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/public2/scripts/home.vue" />
         <option value="$PROJECT_DIR$/testServer.js" />
-        <option value="$PROJECT_DIR$/.npmignore" />
         <option value="$PROJECT_DIR$/src/browserBuild.js" />
         <option value="$PROJECT_DIR$/public2/scripts/site.js" />
         <option value="$PROJECT_DIR$/.eslintrc.json" />
         <option value="$PROJECT_DIR$/public2/index.html" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/docs/scripts/home.vue" />
         <option value="$PROJECT_DIR$/src/animated.vue" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/.npmignore" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/src/docs/scripts/home.vue" />
       </list>
     </option>
   </component>
@@ -247,6 +311,24 @@
               <item name="logo" type="b2602c69:ProjectViewProjectNode" />
               <item name="logo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="logo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="logo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="logo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="logo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="logo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="logo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -275,11 +357,11 @@
       <recent name="D:\logo\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\logo\src" />
       <recent name="D:\logo\src\examples" />
       <recent name="D:\logo\srcs" />
       <recent name="D:\logo\components" />
       <recent name="D:\logo" />
-      <recent name="D:\logo\public2\scripts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -435,7 +517,7 @@
       <workItem from="1546985617158" duration="2911000" />
       <workItem from="1547078040238" duration="5490000" />
       <workItem from="1547172713379" duration="36012000" />
-      <workItem from="1547655506985" duration="10971000" />
+      <workItem from="1547655506985" duration="11826000" />
     </task>
     <servers />
   </component>
@@ -472,22 +554,22 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344723000" />
+    <option name="totallyTimeSpent" value="345578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6738739" visible="true" weight="0.24815595" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6736672" visible="true" weight="0.24815595" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.32612613" side_tool="true" visible="true" weight="0.24815595" />
+      <window_info id="npm" order="2" sideWeight="0.3263328" side_tool="true" visible="true" weight="0.24815595" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Grunt " order="4" sideWeight="0.3101777" side_tool="true" weight="0.2497349" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49525815" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49367756" visible="true" weight="0.39869988" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49525815" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49367756" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -553,21 +635,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public2/materialize-css/sass/materialize.scss" />
-    <entry file="file://$PROJECT_DIR$/node_modules/materialize-css/sass/components/_color.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="401" column="10" selection-start-line="401" selection-start-column="10" selection-end-line="401" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public2/materialize-css/sass/components/_color.scss" />
     <entry file="file://$PROJECT_DIR$/public2/materialize-css/sass/components/_variables.scss" />
     <entry file="file://$PROJECT_DIR$/deploy/prod.sh">
@@ -775,13 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.npmignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -792,7 +852,7 @@
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
@@ -809,31 +869,10 @@
     <entry file="file://$PROJECT_DIR$/src/browserBuild.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/scripts/home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="189" column="10" lean-forward="true" selection-start-line="185" selection-start-column="7" selection-end-line="189" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/animated.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -847,10 +886,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/scripts/home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1085">
+          <caret line="189" column="10" lean-forward="true" selection-start-line="185" selection-start-column="7" selection-end-line="189" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/sandbox/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="159" selection-start-line="11" selection-start-column="159" selection-end-line="11" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.npmignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/animated.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="136">
+          <caret line="8" column="146" selection-start-line="8" selection-start-column="146" selection-end-line="8" selection-end-column="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/docs/scripts/home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="e#6578#6624#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

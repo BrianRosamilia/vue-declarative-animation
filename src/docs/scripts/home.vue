@@ -119,8 +119,8 @@
     </div>
 </template>
 <script>
-    import animated from '../../src/animated.vue';
-    import animation from '../../src/animation.vue';
+    import animated from '../../animated.vue';
+    import animation from '../../animation.vue';
     import PrismEditor from 'vue-prism-editor';
     import 'prismjs';
     import 'prismjs/themes/prism.css';
