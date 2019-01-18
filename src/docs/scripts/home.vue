@@ -146,17 +146,20 @@
     <animation :properties="{ translateY:'10px' }" :duration="500" :loop="true" :easing="'easeInBack'"></animation>
     <img class="icon" src="/images/down.svg">
 </animated>`,
-                codeReveal: `<animated :initial="{ backgroundColor: '#35495e', height: '20px', width:'0%' }" :container-display="'block'">
-    <animation :properties="{ width:'100%' }" :duration="1000"></animation>
-    <animation :properties="{ opacity:'0' }" :duration="1000"></animation>
-    <animation :completed="{ display: 'none' }"></animation>
-    <div></div>
-</animated>
-<animated :initial="{ opacity: 0 }">
-    <animation :properties="{ opacity: 1, fontSize:'84px', color:'#42b883' }" :delay="2000" :duration="500" :loop="true"></animation>
-    <animation :properties="{ color:'#35495e' }" :delay="2000" :duration="500" :loop="true"></animation>
-    <p>💗 Vue.js</p>
-</animated>`,
+                codeReveal: `<button class="button pointer example-btn info" @click="showAnim = !showAnim">Toggle Animation</button>
+<div v-if="showAnim" class="center-text">
+    <animated :initial="{ backgroundColor: '#35495e', height: '20px', width:'0%' }" :container-display="'block'">
+        <animation :properties="{ width:'100%' }" :duration="1000"></animation>
+        <animation :properties="{ opacity:'0' }" :duration="1000"></animation>
+        <animation :completed="{ display: 'none' }"></animation>
+        <div></div>
+    </animated>
+    <animated :initial="{ opacity: 0 }">
+        <animation :properties="{ opacity: 1, fontSize:'84px', color:'#42b883' }" :delay="2000" :duration="500" :loop="true"></animation>
+        <animation :properties="{ color:'#35495e' }" :delay="2000" :duration="500" :loop="true"></animation>
+        <p>💗 Vue.js</p>
+    </animated>
+</div>`,
                 forExample: `<div v-for="card in cards" :key="card">
     <animated :initial="{ opacity: '0', marginLeft:'50px', width:'100%' }">
         <animation :properties="{  opacity: '1', marginLeft: 0, width:'100%' }" :duration="400"></animation>

@@ -2,79 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12f1cf95-bcf4-4f24-bcf2-c46e976015ca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/.npmignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/down.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/vue_logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/head.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/script.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/side-menu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/tabs-menu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/_includes/top-menu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/dist/sandbox-min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/dist/sandbox-min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/_breakpoint-values.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/_colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/_global-variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/a.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/headings.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/reset.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/table.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/base/ul-ol.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/buttons/button-outlined.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/buttons/button.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/buttons/buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/card.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/close.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/code.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/list-items.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/loading.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/modal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/popover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/progress.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/square.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/steps.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/components/tabs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/forms/addons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/forms/controls.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/forms/field.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/forms/icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/layout/flexbox.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/layout/grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/layout/position-presets.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/sandbox.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/themes/themes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/border.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/display.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/float.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/font-size.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/height.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/img.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/overflow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/position.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/spacing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/width.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/z-index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sandbox/src/utilities/zeroing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/scripts/about.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/scripts/application.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/scripts/home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/scripts/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/scripts/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/scripts/home.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -100,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <first_editor relative-caret-position="170">
+                <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
               </first_editor>
               <second_editor />
             </state>
@@ -130,22 +59,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -153,13 +70,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/docs/scripts/home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+            <state relative-caret-position="423">
+              <caret line="160" column="6" selection-start-line="160" selection-start-column="6" selection-end-line="160" selection-end-column="6" />
               <folding>
                 <element signature="e#6578#6624#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/docs/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -275,10 +197,10 @@
         <option value="$PROJECT_DIR$/public2/index.html" />
         <option value="$PROJECT_DIR$/docs/scripts/home.vue" />
         <option value="$PROJECT_DIR$/src/animated.vue" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/.npmignore" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/docs/scripts/home.vue" />
       </list>
     </option>
@@ -290,10 +212,9 @@
     <other-services-enabled>true</other-services-enabled>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="394" />
-    <option name="y" value="-29" />
-    <option name="width" value="1925" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="1900" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -310,24 +231,6 @@
             <path>
               <item name="logo" type="b2602c69:ProjectViewProjectNode" />
               <item name="logo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="logo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="logo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="logo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="logo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="logo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="logo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -517,7 +420,7 @@
       <workItem from="1546985617158" duration="2911000" />
       <workItem from="1547078040238" duration="5490000" />
       <workItem from="1547172713379" duration="36012000" />
-      <workItem from="1547655506985" duration="11826000" />
+      <workItem from="1547655506985" duration="13259000" />
     </task>
     <servers />
   </component>
@@ -554,22 +457,22 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="345578000" />
+    <option name="totallyTimeSpent" value="347011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6736672" visible="true" weight="0.24815595" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6738739" visible="true" weight="0.24815595" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.3263328" side_tool="true" visible="true" weight="0.24815595" />
+      <window_info id="npm" order="2" sideWeight="0.32612613" side_tool="true" visible="true" weight="0.24815595" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Grunt " order="4" sideWeight="0.3101777" side_tool="true" weight="0.2497349" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49525815" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49367756" weight="0.39869988" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49525815" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49367756" visible="true" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -635,7 +538,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public2/materialize-css/sass/components/_color.scss" />
     <entry file="file://$PROJECT_DIR$/public2/materialize-css/sass/components/_variables.scss" />
     <entry file="file://$PROJECT_DIR$/deploy/prod.sh">
       <provider selected="true" editor-type-id="text-editor" />
@@ -876,16 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/scripts/home.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1085">
@@ -895,13 +787,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/sandbox/index.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="159" selection-start-line="11" selection-start-column="159" selection-end-line="11" selection-end-column="159" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.npmignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -917,6 +802,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="159" selection-start-line="11" selection-start-column="159" selection-end-line="11" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -924,17 +826,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="170">
+            <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/docs/scripts/home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="423">
+          <caret line="160" column="6" selection-start-line="160" selection-start-column="6" selection-end-line="160" selection-end-column="6" />
           <folding>
             <element signature="e#6578#6624#0" expanded="true" />
           </folding>
