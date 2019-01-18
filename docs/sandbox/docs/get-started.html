@@ -1,0 +1,51 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Get Started</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Get Started</h1>
+            <hr class="mb-2">
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">Sandbox is a responsive CSS only framework written with Sass. This means that there is no JavaScript included. Sandbox provides buttons, forms, a component library as well as plenty of utility classes to adjust things to your liking.</p>
+            <h3 class="mb-2 fw-bold">Installation</h3>
+            <pre class="code mb-2"><code>npm install sandbox-css</code></pre>
+            <h3 class="mb-2 fw-bold">Usage</h3>
+            <p class="mb-2">Sandbox can be used as is, by including the <span class="snippet">sandbox-min.css</span> file found in the <span class="snippet">node_modules/sandbox-css/dist</span> directory, and linking to it in your html file. Your starter html template will look something like this.</p>
+            <pre class="code mb-2"><code>&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;title&gt;Title&lt;/title&gt;
+        &lt;link rel="stylesheet" href="/path/to/sandbox/here" type="text/css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Customization</h3>
+            <p class="mb-2">Sandbox was made to be customized by either plugging in your own values to the variables provided, or just modifying the source to your liking.</p>
+            <p class="mb-2">After installing the package, go into the <span class="snippet">node_modules/sandbox-css</span> directory and install its dependencies so that you can start to create builds of the framework.</p>
+            <pre class="code mb-2"><code>cd node_modules/sandbox-css
+npm install</code></pre>
+            <h3 class="mb-2 fw-bold">Build</h3>
+            <p class="mb-2">After installing the dependencies and making your changes to the source, run a build using the following command.</p>
+            <pre class="code mb-2"><code>npm run build</code></pre>
+            <p class="mb-2">The Sass will compile and output your new <span class="snippet">sandbox-min.css</span> file into the <span class="snippet">/dist</span> directory.</p>
+            <h3 class="mb-2 fw-bold">Compatibility</h3>
+            <p class="mb-2">Sandbox uses Autoprefixer to take care of vendor specific prefixes, so there's no need to write them yourself.</p>
+            <h3 class="mb-2 fw-bold">Docs</h3>
+            <p class="mb-2">Check out the <a href="{{ '/docs/base/breakpoint-values.html' | absolute_url }}" class="a">documentation</a> to see what Sandbox is all about.</p>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

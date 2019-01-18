@@ -1,0 +1,39 @@
+@import "../base/colors.scss";
+
+.text-left { text-align: left !important; }
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+.text-justify { text-align: justify !important; }
+
+.va-top { vertical-align: top !important; }
+.va-middle { vertical-align: middle !important; }
+.va-bottom { vertical-align: bottom !important; }
+.va-text-top { vertical-align: text-top !important; }
+.va-text-bottom { vertical-align: text-bottom !important; }
+
+.text-capitalize { text-transform: capitalize !important; }
+.text-uppercase { text-transform: uppercase !important; }
+.text-lowercase { text-transform: lowercase !important; }
+
+.fw-lighter { font-weight: lighter !important; }
+.fw-bold { font-weight: bold !important; }
+.fw-normal { font-weight: normal !important; }
+
+.fs-italic { font-style: italic !important; }
+
+.text-line-through { text-decoration: line-through !important; }
+.text-underline { text-decoration: underline !important; }
+.text-overline { text-decoration: overline !important; }
+
+.lh-1 { line-height: 1 !important; }
+
+.text-black { color: $alpha-black !important; }
+.text-muted { color: $alpha-light-black !important; }
+.text-white { color: $alpha-white !important; }
+.text-white-muted { color: $alpha-dark-white !important; }
+
+
+
+
+
+

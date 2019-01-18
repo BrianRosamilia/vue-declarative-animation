@@ -1,0 +1,65 @@
+// whites 
+$white: rgb(255, 255, 255);
+$light-white: rgb(243, 243, 243);
+$medium-white: rgb(230, 230, 230);
+$dark-white: rgb(215, 215, 215);
+
+// grays
+$white-gray: rgb(249, 249, 249);
+$light-gray: rgb(216, 216, 216);
+$medium-gray: rgb(201, 201, 201);
+$dark-gray: rgb(147, 147, 147);
+
+// blacks
+$light-black: rgb(99, 99, 99);
+$medium-black: rgb(76, 76, 76);
+$black: rgb(52, 52, 52);
+
+// alpha colors
+$alpha-black: rgba(0, 0, 0, 0.8);
+$alpha-light-black: rgba(0, 0, 0, 0.3);
+
+$alpha-gray: rgba(160, 160, 160, 0.2);
+$alpha-light-gray: rgba(160, 160, 160, 0.1);
+
+$alpha-white: rgba(255, 255, 255, 0.9);
+$alpha-dark-white: rgba(255, 255, 255, 0.65);
+
+// primary
+$light-primary: rgb(84, 171, 247);
+$medium-primary: rgb(62, 157, 239);
+$dark-primary: rgb(40, 126, 201);
+
+// info
+$light-info: rgb(98, 214, 72);
+$medium-info: rgb(84, 196, 58);
+$dark-info: rgb(63, 150, 42);
+
+// caution
+$light-caution: rgb(244, 244, 73);
+$medium-caution: rgb(232, 232, 25);
+$dark-caution: rgb(111, 111, 16);
+
+// danger
+$light-danger: rgb(242, 85, 65);
+$medium-danger: rgb(229, 60, 39);
+$dark-danger: rgb(198, 44, 23);
+
+// alpha themes
+$alpha-theme-value: 0.5;
+$alpha-light-primary: rgba(84, 171, 247, $alpha-theme-value);
+$alpha-light-info: rgba(98, 214, 72, $alpha-theme-value);
+$alpha-light-caution: rgba(244, 244, 73, $alpha-theme-value);
+$alpha-light-danger: rgba(242, 85, 65, $alpha-theme-value);
+
+// link colors
+$link-unvisited: cornflowerblue;
+$link-visited: mediumpurple;
+
+
+
+
+
+
+
+

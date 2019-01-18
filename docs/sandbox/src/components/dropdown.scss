@@ -1,0 +1,104 @@
+@import "../base/colors.scss";
+@import "../base/global-variables";
+
+$dropdown-background-color: $white;
+$dropdown-border-radius: 0.3rem;
+$dropdown-border-color: $BORDER_COLOR;
+$dropdown-min-width: 16rem;
+$dropdown-a-hover-color: $alpha-gray;
+$dropdown-item-padding: 0.8rem;
+$dropdown-z-index: 25;
+
+$reveal-transition-speed: 150ms;
+
+.reveal-wrapper {
+  display: inline-block;
+  position: relative;
+
+  .reveal-trigger-focus:focus + .reveal-target,
+  .reveal-trigger-focus + .reveal-target:hover,
+  .reveal-trigger-hover:hover + .reveal-target,
+  .reveal-trigger-hover + .reveal-target:hover,
+  .reveal-target.is-revealed {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .reveal-target {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $reveal-transition-speed;
+  }
+}
+
+// div
+.dropdown {
+  font-size: 1.6rem;
+  position: absolute;
+  z-index: $dropdown-z-index;
+  min-width: $dropdown-min-width;
+  background-color: $dropdown-background-color;
+  border: 0.1rem solid $dropdown-border-color;
+  border-radius: $dropdown-border-radius;
+  padding: 0.6rem 0rem;
+  white-space: nowrap;
+  left: 0;
+  top: 100%;
+  
+  &.align-right {
+    right: 0;
+    left: initial;
+  }
+
+  &.on-top {
+    bottom: 100%;
+    top: initial;
+  }
+
+  &.on-left {
+    left: initial;
+    right: 100%;
+    top: 0;
+  }
+
+  &.on-right {
+    left: 100%;
+    top: 0;
+  }
+
+  // div, a
+  .dropdown-item {
+    padding: $dropdown-item-padding;
+    text-align: left;
+    display: block;
+  }
+
+  a.dropdown-item {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      outline: none;
+      background-color: $dropdown-a-hover-color;
+    }
+  }
+
+  // div
+  .dropdown-divider {
+    border-top: 0.1rem solid $dropdown-border-color;
+  }
+
+  .dropdown {
+    &.on-right, &.on-left {
+      top: -1 * $dropdown-item-padding;
+    }
+  }
+
+}
+
+
+
+
+
+
+

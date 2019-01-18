@@ -1,0 +1,62 @@
+@import "./colors.scss";
+@import "./global-variables.scss";
+
+$table-item-padding: 0.75em;
+$table-tight-padding: 0.5em;
+$table-tighter-padding: 0.25em;
+$table-border-color: $BORDER_COLOR;
+$table-row-stripe-color: $alpha-light-gray;
+$table-row-hover-color: $alpha-gray;
+
+.table {
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: left;
+  background-color: $white;
+
+  th, td {
+    padding: $table-item-padding;
+    vertical-align: middle;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  &.tight th, &.tight td {
+    padding: $table-tight-padding;
+  }
+
+  &.tighter th, &.tighter td {
+    padding: $table-tighter-padding;
+  }
+
+  &.border-all th, &.border-all td,
+  .border-all th, .border-all td {
+    border: 0.1rem solid $table-border-color;
+  }
+
+  &.border-bottoms tr, .border-bottoms tr {
+    border-bottom: 0.1rem solid $table-border-color;
+  }
+
+  &.striped-odd tr:nth-child(odd), &.striped-even tr:nth-child(even),
+  .striped-odd tr:nth-child(odd), .striped-even tr:nth-child(even) {
+    background-color: $table-row-stripe-color;
+  }
+
+  &.row-hover tr:hover, .row-hover tr:hover {
+    background-color: $table-row-hover-color;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

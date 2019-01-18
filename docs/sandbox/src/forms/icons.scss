@@ -1,0 +1,50 @@
+@import "../base/colors.scss";
+
+$icons-color: $alpha-light-black;
+$icons-focus-color: $alpha-black;
+$icons-spacing: 0.5em;
+$icons-input-spacing: 2em;
+
+// div
+.icons {
+  font-size: 1.6rem;
+  position: relative;
+  width: 100%;
+
+  &.on-left .textbox {
+    padding-left: $icons-input-spacing;
+  }
+
+  &.on-right .textbox {
+    padding-right: $icons-input-spacing;
+  }
+
+  &.on-both .textbox {
+    padding-left: $icons-input-spacing;
+    padding-right: $icons-input-spacing;
+  }
+
+  // span
+  .icon-left, .icon-right {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    color: $icons-color;
+  }
+
+  .icon-left {
+    left: $icons-spacing;
+  }
+
+  .icon-right {
+    right: $icons-spacing;
+  }
+
+  .textbox {
+    font-size: inherit;
+
+    &:focus ~ .icon-left, &:focus ~ .icon-right {
+      color: $icons-focus-color;
+    }
+  }
+}

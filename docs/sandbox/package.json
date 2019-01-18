@@ -1,0 +1,43 @@
+{
+  "name": "sandbox-css",
+  "version": "0.3.0",
+  "description": "A responsive, scalable, and easy to use CSS framework.",
+  "main": "src/sandbox.scss",
+  "scripts": {
+    "build-compressed": "node node_modules/sass/sass.js src/sandbox.scss dist/sandbox-min.css --style compressed",
+    "build-autoprefix": "node_modules/.bin/postcss dist/sandbox-min.css --use autoprefixer --map true --output dist/sandbox-min.css",
+    "build": "npm run build-compressed && npm run build-autoprefix",
+    "open-root": "open -a 'Sublime Text' package.json src/sandbox.scss",
+    "open-base": "open -a 'Sublime Text' src/base/*.scss",
+    "open-layout": "open -a 'Sublime Text' src/layout/*.scss",
+    "open-buttons": "open -a 'Sublime Text' src/buttons/*.scss",
+    "open-forms": "open -a 'Sublime Text' src/forms/*.scss",
+    "open-components": "open -a 'Sublime Text' src/components/*.scss",
+    "open-utilities": "open -a 'Sublime Text' src/utilities/*.scss",
+    "open-themes": "open -a 'Sublime Text' src/themes/*.scss",
+    "open-sandbox": "npm run open-root && npm run open-base && npm run open-layout && npm run open-buttons && npm run open-forms && npm run open-components && npm run open-utilities && npm run open-themes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlcNine/sandbox.git"
+  },
+  "keywords": [
+    "sandbox",
+    "css",
+    "framework",
+    "responsive",
+    "scalable"
+  ],
+  "author": "Dan Cross",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dlcNine/sandbox/issues"
+  },
+  "homepage": "https://github.com/dlcNine/sandbox#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "postcss": "^6.0.14",
+    "postcss-cli": "^4.1.1",
+    "sass": "^1.14.3"
+  }
+}

@@ -1,0 +1,7 @@
+docs
+public
+coverage
+.cache
+.idea
+.circleci
+server.js

@@ -1,0 +1,6 @@
+{
+  "sourceMaps": "inline",
+  "plugins": [
+    ["transform-object-rest-spread"]
+  ]
+}

@@ -1,0 +1,84 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Button Outlined</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Button Outlined</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">buttons</li>
+                <li class="step">button-outlined.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag info">inline-block</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag info">yes</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag danger">no</span>
+                 </span>
+            </div> 
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-12">
+                        <ul class="ul">
+                            <li><span class="snippet">.button.outlined</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">Use the <span class="snippet">.outlined</span> class on a <span class="snippet">.button</span> to have outline styling applied.</p>
+            <h3 class="mb-2 fw-bold">Example</h3>
+            <div class="grid">
+                <div class="unit-12 unit-6-lg">
+                    <button class="button outlined">button</button>
+                </div>
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code"><code>&lt;button class="button outlined"&gt;button&lt;/button&gt;</code></pre>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Theme classes</h3>
+            <p class="mb-2"></p>
+            <p class="mb-2">The theme classes Sandbox provides set some extra pseudo class styling specifically for outlined buttons.</p>
+            <div class="mb-2">
+                <button class="button primary outlined">primary</button>
+                <button class="button info outlined">info</button>
+                <button class="button caution outlined">caution</button>
+                <button class="button danger outlined">danger</button>
+                <button class="button light outlined">light</button>
+                <button class="button dark outlined">dark</button>
+            </div>
+            <pre class="code mb-2"><code>&lt;button class="button primary outlined"&gt;primary&lt;/button&gt;
+&lt;button class="button info outlined"&gt;info&lt;/button&gt;
+&lt;button class="button caution outlined"&gt;caution&lt;/button&gt;
+&lt;button class="button danger outlined"&gt;danger&lt;/button&gt;
+&lt;button class="button light outlined"&gt;light&lt;/button&gt;
+&lt;button class="button dark outlined"&gt;dark&lt;/button&gt;</code></pre>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/buttons/button.html' | absolute_url}}" class="button">previous</a>
+                <a href="{{ '/docs/buttons/buttons.html' | absolute_url}}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

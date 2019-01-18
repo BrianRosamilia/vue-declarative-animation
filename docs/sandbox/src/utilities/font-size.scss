@@ -1,0 +1,58 @@
+@import "../base/breakpoint-values.scss";
+
+// scale: 1.3333
+
+.huge-1 { font-size: 6.7rem !important; }
+.huge-2 { font-size: 5.1rem !important; }
+.h1 { font-size: 3.8rem !important; }
+.h2 { font-size: 2.8rem !important; }
+.h3 { font-size: 2.1rem !important; }
+.h4 { font-size: 1.6rem !important; }
+.h5 { font-size: 1.2rem !important; }
+.h6 { font-size: 0.9rem !important; }
+
+@media screen and (max-width: $sm-and-below) {
+  .huge-1-sm { font-size: 6.7rem !important; }
+  .huge-2-sm { font-size: 5.1rem !important; }
+  .h1-sm { font-size: 3.8rem !important; }
+  .h2-sm { font-size: 2.8rem !important; }
+  .h3-sm { font-size: 2.1rem !important; }
+  .h4-sm { font-size: 1.6rem !important; }
+  .h5-sm { font-size: 1.2rem !important; }
+  .h6-sm { font-size: 0.9rem !important; }
+}
+
+@media screen and (min-width: $md-lower) and (max-width: $md-upper) {
+  .huge-1-md { font-size: 6.7rem !important; }
+  .huge-2-md { font-size: 5.1rem !important; }
+  .h1-md { font-size: 3.8rem !important; }
+  .h2-md { font-size: 2.8rem !important; }
+  .h3-md { font-size: 2.1rem !important; }
+  .h4-md { font-size: 1.6rem !important; }
+  .h5-md { font-size: 1.2rem !important; }
+  .h6-md { font-size: 0.9rem !important; }
+}
+
+@media screen and (min-width: $lg-and-above) {
+  .huge-1-lg { font-size: 6.7rem !important; }
+  .huge-2-lg { font-size: 5.1rem !important; }
+  .h1-lg { font-size: 3.8rem !important; }
+  .h2-lg { font-size: 2.8rem !important; }
+  .h3-lg { font-size: 2.1rem !important; }
+  .h4-lg { font-size: 1.6rem !important; }
+  .h5-lg { font-size: 1.2rem !important; }
+  .h6-lg { font-size: 0.9rem !important; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

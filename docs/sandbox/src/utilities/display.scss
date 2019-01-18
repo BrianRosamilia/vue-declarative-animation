@@ -1,0 +1,40 @@
+@import "../base/breakpoint-values.scss";
+
+.flex  { display: flex !important; }
+.block { display: block !important; }
+.inline { display: inline !important; }
+.inline-block { display: inline-block !important; }
+.absent { display: none !important; }
+.invisible { visibility: hidden !important; }
+
+@media screen and (max-width: $sm-and-below) {
+  .flex-sm  { display: flex !important; }
+  .block-sm { display: block !important; }
+  .inline-sm { display: inline !important; }
+  .inline-block-sm { display: inline-block !important; }
+  .absent-sm { display: none !important; }
+  .invisible-sm { visibility: hidden !important; }
+}
+
+@media screen and (min-width: $md-lower) and (max-width: $md-upper) {
+  .flex-md  { display: flex !important; }
+  .block-md { display: block !important; }
+  .inline-md { display: inline !important; }
+  .inline-block-md { display: inline-block !important; }
+  .absent-md { display: none !important; }
+  .invisible-md { visibility: hidden !important; }
+}
+
+@media screen and (min-width: $lg-and-above) {
+  .flex-lg  { display: flex !important; }
+  .block-lg { display: block !important; }
+  .inline-lg { display: inline !important; }
+  .inline-block-lg { display: inline-block !important; }
+  .absent-lg { display: none !important; }
+  .invisible-lg { visibility: hidden !important; }
+}
+
+
+
+
+

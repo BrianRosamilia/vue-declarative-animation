@@ -1,0 +1,102 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Code</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Code</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">components</li>
+                <li class="step">code.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag info">yes</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag danger">no</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-4 unit-6-md unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.snippet</span></li>
+                            <li><span class="snippet">.code</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">Use a <span class="snippet">.snippet</span> to highlight a piece of text and have it be styled as code. Use a <span class="snippet">.code</span> for an entire block of code.</p>
+            <p class="mb-2">Be sure to use HTML character entities where appropriate.</p>
+            <h3 class="mb-2 fw-bold">Snippet</h3>
+            <div class="grid mb-2">
+                <div class="unit-12">
+                    <p>Lorem ipsum <span class="snippet">x = 42;</span> dolor amet.</p>
+                </div>
+                <div class="unit-12">
+                    <pre class="code"><code>&lt;p&gt;Lorem ipsum &lt;span class="snippet"&gt;x = 42;&lt;/span&gt; dolor amet.&lt;/p&gt;</code></pre>
+                </div>
+            </div>
+            <div class="card b-0 mb-2">
+                <div class="card-body info">
+                    <p>The <span class="snippet">.snippet</span> has its <span class="snippet">display</span> property set to <span class="snippet">inline-block</span>.</p>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Code</h3>
+            <p class="mb-2">Thanks to the <span class="snippet">pre</span> element, the white space is preserved when writing out your code.</p>
+            <div class="grid mb-2">
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code"><code>function sayHello() {
+    console.log('Hello.');
+}</code></pre>
+                </div>
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code"><code>&lt;pre class="code"&gt;&lt;code&gt;function sayHello() {
+    console.log('Hello.');
+}&lt;/code&gt;&lt;/pre&gt;</code></pre>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Font size scaling</h3>
+            <p class="mb-2">Use the <a href="{{ '/docs/utilities/font-size.html' | absolute_url }}" class="a">font-size utility</a> classes to adjust the size of a <span class="snippet">.code</span>.</p>
+            <div class="grid mb-2">
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code h6"><code>function sayHello() {
+    console.log('Hello.');
+}</code></pre>
+                </div>
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code"><code>&lt;pre class="code h6"&gt;&lt;code&gt;function sayHello() {
+    console.log('Hello.');
+}&lt;/code&gt;&lt;/pre&gt;</code></pre>
+                </div>
+            </div>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/components/popover.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/components/loading.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

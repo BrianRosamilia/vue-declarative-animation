@@ -1,0 +1,302 @@
+@import "../base/breakpoint-values.scss";
+@import "../base/global-variables.scss";
+
+$spacing: $UNIT_SPACING;
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.m-half { margin: 0.5 * $spacing !important; }
+.mt-half { margin-top: 0.5 * $spacing !important; }
+.mb-half { margin-bottom: 0.5 * $spacing !important; }
+.ml-half { margin-left: 0.5 * $spacing !important; }
+.mr-half { margin-right: 0.5 * $spacing !important; }
+
+.mx-half {
+  margin-left: 0.5 * $spacing !important;
+  margin-right: 0.5 * $spacing !important;
+}
+
+.my-half {
+  margin-top: 0.5 * $spacing !important;
+  margin-bottom: 0.5 * $spacing !important;
+}
+
+@for $index from 1 through $SPACING_LEVELS {
+  .m-#{$index} { margin: $spacing * $index !important; }
+  .mt-#{$index} { margin-top: $spacing * $index !important; }
+  .mb-#{$index} { margin-bottom: $spacing * $index !important; }
+  .ml-#{$index} { margin-left: $spacing * $index !important; }
+  .mr-#{$index} { margin-right: $spacing * $index !important; }
+
+  .mx-#{$index} {
+    margin-left: $spacing * $index !important;
+    margin-right: $spacing * $index !important;
+  }
+
+  .my-#{$index} {
+    margin-top: $spacing * $index !important;
+    margin-bottom: $spacing * $index !important;
+  }
+}
+
+.p-half { padding: 0.5 * $spacing !important; }
+.pt-half { padding-top: 0.5 * $spacing !important; }
+.pb-half { padding-bottom: 0.5 * $spacing !important; }
+.pl-half { padding-left: 0.5 * $spacing !important; }
+.pr-half { padding-right: 0.5 * $spacing !important; }
+
+.px-half {
+  padding-left: 0.5 * $spacing !important;
+  padding-right: 0.5 * $spacing !important;
+}
+
+.py-half {
+  padding-top: 0.5 * $spacing !important;
+  padding-bottom: 0.5 * $spacing !important;
+}
+
+@for $index from 1 through $SPACING_LEVELS {
+  .p-#{$index} { padding: $spacing * $index !important; }
+  .pt-#{$index} { padding-top: $spacing * $index !important; }
+  .pb-#{$index} { padding-bottom: $spacing * $index !important; }
+  .pl-#{$index} { padding-left: $spacing * $index !important; }
+  .pr-#{$index} { padding-right: $spacing * $index !important; }
+
+  .px-#{$index} {
+    padding-left: $spacing * $index !important;
+    padding-right: $spacing * $index !important;
+  }
+
+  .py-#{$index} {
+    padding-top: $spacing * $index !important;
+    padding-bottom: $spacing * $index !important;
+  }
+}
+
+@media screen and (max-width: $sm-and-below) {
+  .m-half-sm { margin: 0.5 * $spacing !important; }
+  .mt-half-sm { margin-top: 0.5 * $spacing !important; }
+  .mb-half-sm { margin-bottom: 0.5 * $spacing !important; }
+  .ml-half-sm { margin-left: 0.5 * $spacing !important; }
+  .mr-half-sm { margin-right: 0.5 * $spacing !important; }
+
+  .mx-half-sm {
+    margin-left: 0.5 * $spacing !important;
+    margin-right: 0.5 * $spacing !important;
+  }
+
+  .my-half-sm {
+    margin-top: 0.5 * $spacing !important;
+    margin-bottom: 0.5 * $spacing !important;
+  }
+
+  @for $index from 1 through $SPACING_LEVELS {
+    .m-#{$index}-sm { margin: $spacing * $index !important; }
+    .mt-#{$index}-sm { margin-top: $spacing * $index !important; }
+    .mb-#{$index}-sm { margin-bottom: $spacing * $index !important; }
+    .ml-#{$index}-sm { margin-left: $spacing * $index !important; }
+    .mr-#{$index}-sm { margin-right: $spacing * $index !important; }
+
+    .mx-#{$index}-sm {
+      margin-left: $spacing * $index !important;
+      margin-right: $spacing * $index !important;
+    }
+
+    .my-#{$index}-sm {
+      margin-top: $spacing * $index !important;
+      margin-bottom: $spacing * $index !important;
+    }
+  }
+
+  .p-half-sm { padding: 0.5 * $spacing !important; }
+  .pt-half-sm { padding-top: 0.5 * $spacing !important; }
+  .pb-half-sm { padding-bottom: 0.5 * $spacing !important; }
+  .pl-half-sm { padding-left: 0.5 * $spacing !important; }
+  .pr-half-sm { padding-right: 0.5 * $spacing !important; }
+
+  .px-half-sm {
+    padding-left: 0.5 * $spacing !important;
+    padding-right: 0.5 * $spacing !important;
+  }
+
+  .py-half-sm {
+    padding-top: 0.5 * $spacing !important;
+    padding-bottom: 0.5 * $spacing !important;
+  }
+
+  @for $index from 1 through $SPACING_LEVELS {
+    .p-#{$index}-sm { padding: $spacing * $index !important; }
+    .pt-#{$index}-sm { padding-top: $spacing * $index !important; }
+    .pb-#{$index}-sm { padding-bottom: $spacing * $index !important; }
+    .pl-#{$index}-sm { padding-left: $spacing * $index !important; }
+    .pr-#{$index}-sm { padding-right: $spacing * $index !important; }
+
+    .px-#{$index}-sm {
+      padding-left: $spacing * $index !important;
+      padding-right: $spacing * $index !important;
+    }
+
+    .py-#{$index}-sm {
+      padding-top: $spacing * $index !important;
+      padding-bottom: $spacing * $index !important;
+    }
+  }
+}
+
+@media screen and (min-width: $md-lower) and (max-width: $md-upper) {
+  .m-half-md { margin: 0.5 * $spacing !important; }
+  .mt-half-md { margin-top: 0.5 * $spacing !important; }
+  .mb-half-md { margin-bottom: 0.5 * $spacing !important; }
+  .ml-half-md { margin-left: 0.5 * $spacing !important; }
+  .mr-half-md { margin-right: 0.5 * $spacing !important; }
+
+  .mx-half-md {
+    margin-left: 0.5 * $spacing !important;
+    margin-right: 0.5 * $spacing !important;
+  }
+
+  .my-half-md {
+    margin-top: 0.5 * $spacing !important;
+    margin-bottom: 0.5 * $spacing !important;
+  }
+
+  @for $index from 1 through $SPACING_LEVELS {
+    .m-#{$index}-md { margin: $spacing * $index !important; }
+    .mt-#{$index}-md { margin-top: $spacing * $index !important; }
+    .mb-#{$index}-md { margin-bottom: $spacing * $index !important; }
+    .ml-#{$index}-md { margin-left: $spacing * $index !important; }
+    .mr-#{$index}-md { margin-right: $spacing * $index !important; }
+
+    .mx-#{$index}-md {
+      margin-left: $spacing * $index !important;
+      margin-right: $spacing * $index !important;
+    }
+
+    .my-#{$index}-md {
+      margin-top: $spacing * $index !important;
+      margin-bottom: $spacing * $index !important;
+    }
+  }
+
+  .p-half-md { padding: 0.5 * $spacing !important; }
+  .pt-half-md { padding-top: 0.5 * $spacing !important; }
+  .pb-half-md { padding-bottom: 0.5 * $spacing !important; }
+  .pl-half-md { padding-left: 0.5 * $spacing !important; }
+  .pr-half-md { padding-right: 0.5 * $spacing !important; }
+
+  .px-half-md {
+    padding-left: 0.5 * $spacing !important;
+    padding-right: 0.5 * $spacing !important;
+  }
+
+  .py-half-md {
+    padding-top: 0.5 * $spacing !important;
+    padding-bottom: 0.5 * $spacing !important;
+  }
+
+  @for $index from 1 through $SPACING_LEVELS {
+    .p-#{$index}-md { padding: $spacing * $index !important; }
+    .pt-#{$index}-md { padding-top: $spacing * $index !important; }
+    .pb-#{$index}-md { padding-bottom: $spacing * $index !important; }
+    .pl-#{$index}-md { padding-left: $spacing * $index !important; }
+    .pr-#{$index}-md { padding-right: $spacing * $index !important; }
+
+    .px-#{$index}-md {
+      padding-left: $spacing * $index !important;
+      padding-right: $spacing * $index !important;
+    }
+
+    .py-#{$index}-md {
+      padding-top: $spacing * $index !important;
+      padding-bottom: $spacing * $index !important;
+    }
+  }
+}
+
+@media screen and (min-width: $lg-and-above) {
+  .m-half-lg { margin: 0.5 * $spacing !important; }
+  .mt-half-lg { margin-top: 0.5 * $spacing !important; }
+  .mb-half-lg { margin-bottom: 0.5 * $spacing !important; }
+  .ml-half-lg { margin-left: 0.5 * $spacing !important; }
+  .mr-half-lg { margin-right: 0.5 * $spacing !important; }
+
+  .mx-half-lg {
+    margin-left: 0.5 * $spacing !important;
+    margin-right: 0.5 * $spacing !important;
+  }
+
+  .my-half-lg {
+    margin-top: 0.5 * $spacing !important;
+    margin-bottom: 0.5 * $spacing !important;
+  }
+
+  @for $index from 1 through $SPACING_LEVELS {
+    .m-#{$index}-lg { margin: $spacing * $index !important; }
+    .mt-#{$index}-lg { margin-top: $spacing * $index !important; }
+    .mb-#{$index}-lg { margin-bottom: $spacing * $index !important; }
+    .ml-#{$index}-lg { margin-left: $spacing * $index !important; }
+    .mr-#{$index}-lg { margin-right: $spacing * $index !important; }
+
+    .mx-#{$index}-lg {
+      margin-left: $spacing * $index !important;
+      margin-right: $spacing * $index !important;
+    }
+
+    .my-#{$index}-lg {
+      margin-top: $spacing * $index !important;
+      margin-bottom: $spacing * $index !important;
+    }
+  }
+
+  .p-half-lg { padding: 0.5 * $spacing !important; }
+  .pt-half-lg { padding-top: 0.5 * $spacing !important; }
+  .pb-half-lg { padding-bottom: 0.5 * $spacing !important; }
+  .pl-half-lg { padding-left: 0.5 * $spacing !important; }
+  .pr-half-lg { padding-right: 0.5 * $spacing !important; }
+
+  .px-half-lg {
+    padding-left: 0.5 * $spacing !important;
+    padding-right: 0.5 * $spacing !important;
+  }
+
+  .py-half-lg {
+    padding-top: 0.5 * $spacing !important;
+    padding-bottom: 0.5 * $spacing !important;
+  }
+
+  @for $index from 1 through $SPACING_LEVELS {
+    .p-#{$index}-lg { padding: $spacing * $index !important; }
+    .pt-#{$index}-lg { padding-top: $spacing * $index !important; }
+    .pb-#{$index}-lg { padding-bottom: $spacing * $index !important; }
+    .pl-#{$index}-lg { padding-left: $spacing * $index !important; }
+    .pr-#{$index}-lg { padding-right: $spacing * $index !important; }
+
+    .px-#{$index}-lg {
+      padding-left: $spacing * $index !important;
+      padding-right: $spacing * $index !important;
+    }
+
+    .py-#{$index}-lg {
+      padding-top: $spacing * $index !important;
+      padding-bottom: $spacing * $index !important;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,290 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Colors</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Colors</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">base</li>
+                <li class="step">_colors.scss</li>
+            </ul>
+            <hr class="mb-2">
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">The following color variables are used throughout Sandbox. Keep in mind that when compiled these values are converted to hex values.</p>
+            <p class="mb-2"> If you're looking for how color properties such as <span class="snippet">background-color</span> and <span class="snippet">color</span> are applied as classes, please see <a href="{{ '/docs/themes/themes.html' | absolute_url }}" class="a">Themes</a>.</p>
+            <div class="ox-auto">
+                <table class="table border-bottoms mb-3">
+                    <thead>
+                        <tr>
+                            <th>Identifier</th>
+                            <th>Value</th>
+                            <th>Color</th>
+                        </tr>
+                    </thead>
+                    <tbody class="striped-odd">
+                        <tr>
+                            <td><span class="snippet">$white</span></td>
+                            <td>rgb(255, 255, 255)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(255, 255, 255);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$light-white</span></td>
+                            <td>rgb(243, 243, 243)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(243, 243, 243);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$medium-white</span></td>
+                            <td>rgb(230, 230, 230)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(230, 230, 230);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$dark-white</span></td>
+                            <td>rgb(215, 215, 215)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(215, 215, 215);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$white-gray</span></td>
+                            <td>rgb(249, 249, 249)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(249, 249, 249);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$light-gray</span></td>
+                            <td>rgb(216, 216, 216)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(216, 216, 216);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$medium-gray</span></td>
+                            <td>rgb(201, 201, 201)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(201, 201, 201);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$dark-gray</span></td>
+                            <td>rgb(147, 147, 147)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(147, 147, 147);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$light-black</span></td>
+                            <td>rgb(99, 99, 99)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(99, 99, 99);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$medium-black</span></td>
+                            <td>rgb(76, 76, 76)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(76, 76, 76);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$black</span></td>
+                            <td>rgb(52, 52, 52)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(52, 52, 52);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$alpha-black</span></td>
+                            <td>rgba(0, 0, 0, 0.8)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgba(0, 0, 0, 0.8);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$alpha-light-black</span></td>
+                            <td>rgba(0, 0, 0, 0.3)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgba(0, 0, 0, 0.3);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$alpha-gray</span></td>
+                            <td>rgba(160, 160, 160, 0.2)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgba(160, 160, 160, 0.2);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$alpha-light-gray</span></td>
+                            <td>rgba(160, 160, 160, 0.1)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgba(160, 160, 160, 0.1);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$alpha-white</span></td>
+                            <td>rgba(255, 255, 255, 0.9)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgba(255, 255, 255, 0.9);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$alpha-dark-white</span></td>
+                            <td>rgba(255, 255, 255, 0.65)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgba(255, 255, 255, 0.65);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$light-primary</span></td>
+                            <td>rgb(84, 171, 247)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(84, 171, 247);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$medium-primary</span></td>
+                            <td>rgb(62, 157, 239)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(62, 157, 239);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$dark-primary</span></td>
+                            <td>rgb(40, 126, 201)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(40, 126, 201);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$light-info</span></td>
+                            <td>rgb(98, 214, 72)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(98, 214, 72);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$medium-info</span></td>
+                            <td>rgb(84, 196, 58)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(84, 196, 58);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$dark-info</span></td>
+                            <td>rgb(63, 150, 42)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(63, 150, 42);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$light-caution</span></td>
+                            <td>rgb(244, 244, 73)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(244, 244, 73);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$medium-caution</span></td>
+                            <td>rgb(232, 232, 25)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(232, 232, 25);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$dark-caution</span></td>
+                            <td>rgb(111, 111, 16)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(111, 111, 16);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$light-danger</span></td>
+                            <td>rgb(242, 85, 65)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(242, 85, 65);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$medium-danger</span></td>
+                            <td>rgb(229, 60, 39)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(229, 60, 39);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$dark-danger</span></td>
+                            <td>rgb(198, 44, 23)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgb(198, 44, 23);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$alpha-light-primary</span></td>
+                            <td>rgba(84, 171, 247, 0.5)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgba(84, 171, 247, 0.5);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$alpha-light-info</span></td>
+                            <td>rgba(98, 214, 72, 0.5)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgba(98, 214, 72, 0.5);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$alpha-light-caution</span></td>
+                            <td>rgba(244, 244, 73, 0.5)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgba(244, 244, 73, 0.5);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$alpha-light-danger</span></td>
+                            <td>rgba(242, 85, 65, 0.5)</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: rgba(242, 85, 65, 0.5);"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$link-unvisited</span></td>
+                            <td>cornflowerblue</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: cornflowerblue;"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="snippet">$link-visited</span></td>
+                            <td>mediumpurple</td>
+                            <td>
+                                <div class="p-1 r" style="background-color: mediumpurple;"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/base/breakpoint-values.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/base/global-variables.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

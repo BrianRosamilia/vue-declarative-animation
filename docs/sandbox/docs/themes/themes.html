@@ -1,0 +1,138 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Themes</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Themes</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">themes</li>
+                <li class="step">themes.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag primary">n/a</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class List</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-4 unit-6-md unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.primary</span></li>
+                            <li><span class="snippet">.info</span></li>
+                            <li><span class="snippet">.caution</span></li>
+                            <li><span class="snippet">.danger</span></li>
+                            <li><span class="snippet">.light</span></li>
+                            <li><span class="snippet">.dark</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">The theme classes Sandbox provides are very simple, and easy to expand or create. The only color properties they set are <span class="snippet">background-color</span>, <span class="snippet">border-color</span> and <span class="snippet">color</span>.</p>
+            <p class="mb-2">These theme classes can be used pretty much anywhere in order to change the visual style of the element they are used on.</p>
+            <h3 class="mb-2 fw-bold">Example</h3>
+            <div class="grid mb-2">
+                <div class="unit-12">
+                    <span class="tag h4 primary">tag</span>
+                    <span class="tag h4 info">tag</span>
+                    <span class="tag h4 caution">tag</span>
+                    <span class="tag h4 danger">tag</span>
+                    <span class="tag h4 light">tag</span>
+                    <span class="tag h4 dark">tag</span>
+                    <div class="progress my-half">
+                        <div class="progress-bar primary" style="width: 40%;"></div>
+                    </div>
+                    <div class="progress mb-half">
+                        <div class="progress-bar info" style="width: 50%;"></div>
+                    </div>
+                    <div class="progress mb-half">
+                        <div class="progress-bar caution" style="width: 60%;"></div>
+                    </div>
+                    <div class="progress mb-half">
+                        <div class="progress-bar danger" style="width: 70%;"></div>
+                    </div>
+                    <div class="progress mb-half">
+                        <div class="progress-bar light" style="width: 80%;"></div>
+                    </div>
+                    <div class="progress mb-half">
+                        <div class="progress-bar dark" style="width: 90%;"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header light">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-muted">mm/dd/yyyy</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis tempora veritatis excepturi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit-12">
+                    <pre class="code"><code>&lt;span class="tag h4 primary"&gt;tag&lt;/span&gt;
+&lt;span class="tag h4 info"&gt;tag&lt;/span&gt;
+&lt;span class="tag h4 caution"&gt;tag&lt;/span&gt;
+&lt;span class="tag h4 danger"&gt;tag&lt;/span&gt;
+&lt;span class="tag h4 light"&gt;tag&lt;/span&gt;
+&lt;span class="tag h4 dark"&gt;tag&lt;/span&gt;
+&lt;div class="progress my-half"&gt;
+    &lt;div class="progress-bar primary" style="width: 40%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mb-half"&gt;
+    &lt;div class="progress-bar info" style="width: 50%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mb-half"&gt;
+    &lt;div class="progress-bar caution" style="width: 60%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mb-half"&gt;
+    &lt;div class="progress-bar danger" style="width: 70%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mb-half"&gt;
+    &lt;div class="progress-bar light" style="width: 80%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mb-half"&gt;
+    &lt;div class="progress-bar dark" style="width: 90%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card"&gt;
+    &lt;div class="card-header light"&gt;
+        &lt;h3&gt;<span class="text-muted">&lt;!-- your content --&gt;</span>&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h5 class="text-muted"&gt;mm/dd/yyyy&lt;/h5&gt;
+        &lt;p&gt;<span class="text-muted">&lt;!-- your content --&gt;</span>&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/utilities/zeroing.html' | absolute_url }}" class="button">previous</a>
+                <a href="" class="button" disabled>next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

@@ -1,0 +1,140 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Progress</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Progress</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">components</li>
+                <li class="step">progress.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag info">yes</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag danger">no</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-4 unit-6-md unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.progress</span></li>
+                            <li><span class="snippet">.progress-bar</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">Use a <span class="snippet">.progress</span> to visually indicate how much progress has been made.</p>
+            <h3 class="mb-2 fw-bold">Structure</h3>
+            <div class="grid mb-2">
+                <div class="unit-12">
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="unit-12">
+                    <pre class="code"><code>&lt;div class="progress"&gt;
+    &lt;div class="progress-bar" style="width: 65%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Multiple</h3>
+            <p class="mb-2">Any number of <span class="snippet">.progress-bar</span> elements can be put inside of a <span class="snippet">.progress</span>.</p>
+            <div class="grid mb-2">
+                <div class="unit-12">
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 20%;"></div>
+                        <div class="progress-bar primary" style="width: 30%;"></div>
+                        <div class="progress-bar info" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="unit-12">
+                    <pre class="code"><code>&lt;div class="progress"&gt;
+    &lt;div class="progress-bar" style="width: 20%;"&gt;&lt;/div&gt;
+    &lt;div class="progress-bar primary" style="width: 30%;"&gt;&lt;/div&gt;
+    &lt;div class="progress-bar info" style="width: 40%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Font size scaling</h3>
+            <p class="mb-2">Use the <a href="{{ '/docs/utilities/font-size.html' | absolute_url }}" class="a">font size utility</a> classes on a <span class="snippet">.progress</span> to change its size.</p>
+            <div class="grid mb-2">
+                <div class="unit-12">
+                    <div class="progress h6 mb-half">
+                        <div class="progress-bar" style="width: 20%;"></div>
+                    </div>
+                    <div class="progress mb-half">
+                        <div class="progress-bar" style="width: 20%;"></div>
+                    </div>
+                    <div class="progress h2">
+                        <div class="progress-bar" style="width: 20%;"></div>
+                    </div>
+                </div>
+                <div class="unit-12">
+                    <pre class="code"><code>&lt;div class="progress h6 mb-half"&gt;
+    &lt;div class="progress-bar" style="width: 20%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress mb-half"&gt;
+    &lt;div class="progress-bar" style="width: 20%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress h2"&gt;
+    &lt;div class="progress-bar" style="width: 20%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Themes</h3>
+            <p class="mb-2">Use any of the provided <a href="{{ '/docs/themes/themes.html' | absolute_url }}" class="a">theme classes</a> on a <span class="snippet">.progress-bar</span> to have that themes styles applied.</p>
+            <div class="grid mb-2">
+                <div class="unit-12">
+                    <div class="progress">
+                        <div class="progress-bar primary" style="width: 15%"></div>
+                        <div class="progress-bar info" style="width: 15%"></div>
+                        <div class="progress-bar caution" style="width: 15%"></div>
+                        <div class="progress-bar danger" style="width: 15%"></div>
+                        <div class="progress-bar light" style="width: 15%"></div>
+                        <div class="progress-bar dark" style="width: 15%"></div>
+                    </div>
+                </div>
+                <div class="unit-12">
+                    <pre class="code"><code>&lt;div class="progress"&gt;
+    &lt;div class="progress-bar primary" style="width: 15%"&gt;&lt;/div&gt;
+    &lt;div class="progress-bar info" style="width: 15%"&gt;&lt;/div&gt;
+    &lt;div class="progress-bar caution" style="width: 15%"&gt;&lt;/div&gt;
+    &lt;div class="progress-bar danger" style="width: 15%"&gt;&lt;/div&gt;
+    &lt;div class="progress-bar light" style="width: 15%"&gt;&lt;/div&gt;
+    &lt;div class="progress-bar dark" style="width: 15%"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/components/square.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/components/list-items.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

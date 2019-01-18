@@ -1,0 +1,75 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Overflow</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Overflow</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">utilities</li>
+                <li class="step">overflow.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag danger">no</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-4 unit-6-md unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.o-scroll</span></li>
+                            <li><span class="snippet">.o-auto</span></li>
+                            <li><span class="snippet">.o-hidden</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-4 unit-6-md unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.ox-scroll</span></li>
+                            <li><span class="snippet">.ox-auto</span></li>
+                            <li><span class="snippet">.ox-hidden</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-4 unit-6-md unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.oy-scroll</span></li>
+                            <li><span class="snippet">.oy-auto</span></li>
+                            <li><span class="snippet">.oy-hidden</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">Above, <span class="snippet">o</span> stands for <span class="snippet">overflow</span>, <span class="snippet">x</span> stands for the <span class="snippet">x</span> axis, and <span class="snippet">y</span> stands for the <span class="snippet">y</span> axis.</p>
+            <p class="mb-2">Use the overflow utility classes on a parent element to determine what should happen when child content exceeds the set size of the parent.</p>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/utilities/z-index.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/utilities/width.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

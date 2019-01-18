@@ -1,0 +1,65 @@
+@import "../base/global-variables.scss";
+@import "../base/mixins.scss";
+
+$buttons-button-border-width: 0.0625em;
+$buttons-button-round-radius: $RADIUS_ROUND;
+
+// div
+.buttons {
+  font-size: 1.6rem;
+
+  &::after {
+    @include clearfix();
+  }
+
+  &.flex {
+    & > .button, & > .reveal-wrapper, & > .reveal-wrapper > .button {
+      width: 100%;
+    }
+  }
+
+  &.r-round > .button, &.r-round > .reveal-wrapper {
+    &:first-child {
+      border-top-left-radius: $buttons-button-round-radius;
+      border-bottom-left-radius: $buttons-button-round-radius;
+    }
+
+    &:last-child {
+      border-top-right-radius: $buttons-button-round-radius;
+      border-bottom-right-radius: $buttons-button-round-radius;
+    }
+  }
+
+  &.r-0 > .button, &.r-0 > .reveal-wrapper {
+    border-radius: 0;
+  }
+
+  & > .reveal-wrapper {
+    border-radius: $BUTTON_BORDER_RADIUS;
+  }
+
+  & > .button, & > .reveal-wrapper, & > .reveal-wrapper > .button {
+    font-size: inherit;
+  }
+
+  & > .button, & > .reveal-wrapper {
+    float: left;
+  
+    &:not(:last-child) {
+      margin-right: -1 * $buttons-button-border-width;
+    }
+  
+    @include child-radius-rules();
+  }
+
+  & > .reveal-wrapper > .button {
+    border-radius: inherit;
+  }
+}
+
+
+
+
+
+
+

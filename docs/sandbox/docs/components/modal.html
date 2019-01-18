@@ -1,0 +1,121 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Modal</title>
+</head>
+<body>
+    <div class="overlay absent">
+        <div class="unit-8 unit-12-sm absolute center-center">
+            <div class="modal">
+                <button class="close to-right"></button>
+                <h2>Lorem ipsum dolor</h2>
+                <h5 class="text-muted mb-1">Lorem ipsum dolor sit</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, provident atque ipsa veniam labore voluptatibus aliquid magnam laboriosam officia ex!</p>
+            </div>
+        </div>
+    </div>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Modal</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">components</li>
+                <li class="step">modal.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag info">fixed</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag info">55</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag info">yes</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag danger">no</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-12">
+                        <ul class="ul">
+                            <li><span class="snippet">.overlay</span></li>
+                            <li><span class="snippet">.modal</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">An <span class="snippet">.overlay</span> is a fixed positioned element, which obscures the rest of the body content. Any content you want can be put inside of an <span class="snippet">.overlay</span>.</p>
+            <p class="mb-2">Make use of the other classes such as <a class="a" href="{{ '/docs/layout/grid.html' | absolute_url }}">grid units</a>, <a class="a" href="{{ '/docs/utilities/position.html' | absolute_url }}">position utilities</a>, and <a class="a" href="{{ '/docs/layout/position-presets.html' | absolute_url }}">position presets</a> to adjust the size and placement of the <span class="snippet">.modal</span> inside the <span class="snippet">.overlay</span>.</p>
+            <h3 class="mb-2 fw-bold">Structure</h3>
+            <p class="mb-2">The way you decide to use your <span class="snippet">.overlay</span> and <span class="snippet">.modal</span> is largely up to you. Below is the structure used in the following example.</p>
+            <pre class="code mb-2"><code>&lt;div class="overlay absent"&gt;
+    &lt;div class="unit-8 unit-12-sm absolute center-center"&gt;
+        &lt;div class="modal"&gt;
+            <span class="text-muted">&lt;!-- any content you want --&gt;</span>
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Example</h3>
+            <p class="mb-2">Click the button to below to open the modal example.</p>
+            <button id="openModal" class="button primary mb-2">open modal</button>
+            <div class="card b-0 mb-2">
+                <div class="card-body info">
+                    <p class="mb-2">Remember that Sandbox is a CSS only framework, meaning that any Javascript you want to use is up to you. The Javascript written for the above example was: </p>
+                    <pre class="code"><code>let body = document.querySelector('body');
+let openModal = document.querySelector('#openModal');
+let overlay = document.querySelector('.overlay');
+
+openModal.addEventListener('click', function(e) {
+    body.classList.toggle('oy-hidden');
+    overlay.classList.toggle('absent');
+});
+
+overlay.addEventListener('click', function(e) {
+    if (e.target.classList.contains('overlay') || e.target.classList.contains('close')) {
+        body.classList.toggle('oy-hidden');
+        overlay.classList.toggle('absent');
+    }
+});</code></pre>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Font size scaling</h3>
+            <p class="mb-2">The <span class="snippet">padding</span> and <span class="snippet">border-radius</span> of a <span class="snippet">.modal</span> can be adjusted by using the <a href="{{ '/docs/utilities/font-size.html' | absolute_url }}" class="a">font size utility classes</a>.</p>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/forms/icons.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/components/card.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+    <script type="text/javascript">
+        let body = document.querySelector('body');
+        let openModal = document.querySelector('#openModal');
+        let overlay = document.querySelector('.overlay');
+
+        openModal.addEventListener('click', function(e) {
+            body.classList.toggle('oy-hidden');
+            overlay.classList.toggle('absent');
+        });
+
+        overlay.addEventListener('click', function(e) {
+            if (e.target.classList.contains('overlay') || e.target.classList.contains('close')) {
+                body.classList.toggle('oy-hidden');
+                overlay.classList.toggle('absent');
+            }
+        });
+    </script>
+</body>
+</html>

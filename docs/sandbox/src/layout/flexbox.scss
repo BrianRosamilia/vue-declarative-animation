@@ -1,0 +1,57 @@
+@import "../base/breakpoint-values.scss";
+
+.start { justify-content: flex-start; }
+.center { justify-content: center; }
+.end { justify-content: flex-end; }
+.between { justify-content: space-between; }
+.around { justify-content: space-around; }
+.even { justify-content: space-evenly; }
+
+.cross-start { align-items: flex-start; }
+.cross-center { align-items: center; }
+.cross-end { align-items: flex-end; }
+.cross-baseline { align-items: baseline; }
+.cross-stretch { align-items: stretch; }
+
+.flex-wrap { flex-wrap: wrap; }
+
+@media screen and (max-width: $sm-and-below) {
+  @for $index from 1 through 4 {
+      .order-#{$index}-sm { order: $index; }
+  }
+}
+
+@media screen and (min-width: $md-lower) and (max-width: $md-upper) {
+  @for $index from 1 through 4 {
+      .order-#{$index}-md { order: $index; }
+  }
+}
+
+@media screen and (min-width: $lg-and-above) {
+  @for $index from 1 through 4 {
+      .order-#{$index}-lg { order: $index; }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

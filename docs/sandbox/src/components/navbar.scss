@@ -1,0 +1,55 @@
+@import "../base/colors.scss";
+@import "../base/mixins.scss";
+
+$navbar-background-color: $medium-white;
+$navbar-padding: 0.25em;
+$navbar-item-padding: 0.5em;
+$navbar-item-border-radius: 0.25em;
+
+// nav, div
+.navbar {
+  font-size: 1.6rem;
+  padding: $navbar-padding;
+  background-color: $navbar-background-color;
+
+  &.fixed-top {
+    position: fixed;
+    z-index: 25;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  // div, a
+  .navbar-item {
+    display: inline-block;
+    padding: $navbar-item-padding;
+    border-radius: $navbar-item-border-radius;
+
+    &.is-active {
+      background-color: $alpha-gray;
+    }
+  }
+
+  a.navbar-item {
+    color: inherit;
+    text-decoration: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover, &.focus {
+      background-color: $alpha-gray;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+

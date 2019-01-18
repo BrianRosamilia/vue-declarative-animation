@@ -1,0 +1,297 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Field</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Field</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">forms</li>
+                <li class="step">field.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag danger">no</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag danger">no</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.field</span></li>
+                            <li><span class="snippet">.field .title</span></li>
+                            <li><span class="snippet">.field .help</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.field.required</span></li>
+                            <li><span class="snippet">.field.horizontal</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">Use a <span class="snippet">.field</span> to group together information about the control being used within it, such as a <span class="snippet">.title</span> and <span class="snippet">.help</span> text.</p>
+            <div class="field mb-2">
+                <label class="title">First Name</label>
+                <input type="text" class="textbox" placeholder="John">
+                <p class="help">This is some help text.</p>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="field mb-2"&gt;
+    &lt;label class="title">First Name&lt;/label&gt;
+    &lt;input type="text" class="textbox" placeholder="John"&gt;
+    &lt;p class="help"&gt;This is some help text.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Required</h3>
+            <p class="mb-2">Use the <span class="snippet">.required</span> class on a <span class="snippet">.field</span> to have an asterisk put after the <span class="snippet">.title</span>. Don't forget to put the <span class="snippet">required</span> attribute on the actual control itself.</p>
+            <div class="field required mb-2">
+                <label class="title">First Name</label>
+                <input type="text" class="textbox" placeholder="John" required>
+                <p class="help">This is some help text.</p>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="field required mb-2"&gt;
+    &lt;label class="title">First Name&lt;/label&gt;
+    &lt;input type="text" class="textbox" placeholder="John" required&gt;
+    &lt;p class="help"&gt;This is some help text.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Themes</h3>
+            <p class="mb-2">The theme classes Sandbox provides sets some extra styling specifically for fields.</p>
+            <div class="field primary">
+                <label class="title">Title</label>
+                <input type="text" class="textbox">
+                <p class="help">Help text</p>
+            </div>
+            <div class="field info">
+                <label class="title">Title</label>
+                <input type="text" class="textbox">
+                <p class="help">Help text</p>
+            </div>
+            <div class="field caution">
+                <label class="title">Title</label>
+                <input type="text" class="textbox">
+                <p class="help">Help text</p>
+            </div>
+            <div class="field danger mb-2">
+                <label class="title">Title</label>
+                <input type="text" class="textbox">
+                <p class="help">Help text</p>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="field primary"&gt;
+    &lt;label class="title"&gt;Title&lt;/label&gt;
+    &lt;input type="text" class="textbox"&gt;
+    &lt;p class="help"&gt;Help text&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="field info"&gt;
+    &lt;label class="title"&gt;Title&lt;/label&gt;
+    &lt;input type="text" class="textbox"&gt;
+    &lt;p class="help"&gt;Help text&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="field caution"&gt;
+    &lt;label class="title"&gt;Title&lt;/label&gt;
+    &lt;input type="text" class="textbox"&gt;
+    &lt;p class="help"&gt;Help text&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="field danger"&gt;
+    &lt;label class="title"&gt;Title&lt;/label&gt;
+    &lt;input type="text" class="textbox"&gt;
+    &lt;p class="help"&gt;Help text&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Grid</h3>
+            <p class="mb-2">To create a <a href="{{ '/docs/layout/grid.html' | absolute_url }}" class="a">grid</a> layout of fields, just use the fields as the content of the grid units.</p>
+            <form class="grid tight mb-2">
+                <div class="unit-6">
+                    <div class="field">
+                        <label class="title">First Name</label>
+                        <input type="text" class="textbox">
+                        <p class="help absent"></p>
+                    </div>
+                </div>
+                <div class="unit-6">
+                    <div class="field">
+                        <label class="title">Last Name</label>
+                        <input type="text" class="textbox">
+                        <p class="help absent"></p>
+                    </div>
+                </div>
+                <div class="unit-12">
+                    <div class="field">
+                        <label class="title">Street Address</label>
+                        <input type="text" class="textbox">
+                        <p class="help absent"></p>
+                    </div>
+                </div>
+                <div class="unit-4">
+                    <div class="field">
+                        <label class="title">City</label>
+                        <input type="text" class="textbox">
+                        <p class="help absent"></p>
+                    </div>
+                </div>
+                <div class="unit-4">
+                    <div class="field">
+                        <label class="title">State</label>
+                        <input type="text" class="textbox">
+                        <p class="help absent"></p>
+                    </div>
+                </div>
+                <div class="unit-4">
+                    <div class="field">
+                        <label class="title">Zip</label>
+                        <input type="text" class="textbox">
+                        <p class="help absent"></p>
+                    </div>
+                </div>
+            </form>
+            <pre class="code mb-2"><code>&lt;form class="grid tight mb-2"&gt;
+    &lt;div class="unit-6"&gt;
+        &lt;div class="field"&gt;
+            &lt;label class="title"&gt;First Name&lt;/label&gt;
+            &lt;input type="text" class="textbox"&gt;
+            &lt;p class="help absent"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="unit-6"&gt;
+        &lt;div class="field"&gt;
+            &lt;label class="title"&gt;Last Name&lt;/label&gt;
+            &lt;input type="text" class="textbox"&gt;
+            &lt;p class="help absent"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="unit-12"&gt;
+        &lt;div class="field"&gt;
+            &lt;label class="title"&gt;Street Address&lt;/label&gt;
+            &lt;input type="text" class="textbox"&gt;
+            &lt;p class="help absent"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="unit-4"&gt;
+        &lt;div class="field"&gt;
+            &lt;label class="title"&gt;City&lt;/label&gt;
+            &lt;input type="text" class="textbox"&gt;
+            &lt;p class="help absent"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="unit-4"&gt;
+        &lt;div class="field"&gt;
+            &lt;label class="title"&gt;State&lt;/label&gt;
+            &lt;input type="text" class="textbox"&gt;
+            &lt;p class="help absent"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="unit-4"&gt;
+        &lt;div class="field"&gt;
+            &lt;label class="title"&gt;Zip&lt;/label&gt;
+            &lt;input type="text" class="textbox"&gt;
+            &lt;p class="help absent"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Field horizontal</h3>
+            <p class="mb-2">Creating a horizontal layout of fields requires the use of the <span class="snippet">.horizontal</span> class on each <span class="snippet">.field</span> as well as the grid system.</p>
+            <p class="mb-2">In this situation the fields are the immediate children of the <span class="snippet">.grid</span>, the <span class="snippet">unit-</span> classes are the immediate children of the <span class="snippet">.field.horizontal</span>, and the content goes within the unit.</p>
+            <form class="grid tight mb-2">
+                <div class="field horizontal">
+                    <div class="unit-4 text-right">
+                        <label class="title">First Name</label>
+                    </div>
+                    <div class="unit-8">
+                        <input type="text" class="textbox" placeholder="John">
+                    </div>
+                </div>
+                <div class="field horizontal">
+                    <div class="unit-4 text-right">
+                        <label class="title">Likes selects</label>
+                    </div>
+                    <div class="unit-8">
+                        <select class="textbox">
+                            <option value="" selected disabled>maybe</option>
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field horizontal">
+                    <div class="unit-4 text-right">
+                        <label class="title">Likes radio inputs</label>
+                    </div>
+                    <div class="unit-8">
+                        <label class="radio mr-1">
+                            <input type="radio" name="radios" value="yes">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radios" value="no">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <pre class="code mb-2"><code>&lt;form class="grid tight mb-2"&gt;
+    &lt;div class="field horizontal"&gt;
+        &lt;div class="unit-4 text-right"&gt;
+            &lt;label class="title"&gt;First Name&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="unit-8"&gt;
+            &lt;input type="text" class="textbox" placeholder="John"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="field horizontal"&gt;
+        &lt;div class="unit-4 text-right"&gt;
+            &lt;label class="title"&gt;Likes selects&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="unit-8"&gt;
+            &lt;select class="textbox"&gt;
+                &lt;option value="" selected disabled&gt;maybe&lt;/option&gt;
+                &lt;option value="yes"&gt;yes&lt;/option&gt;
+                &lt;option value="no"&gt;no&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="field horizontal"&gt;
+        &lt;div class="unit-4 text-right"&gt;
+            &lt;label class="title"&gt;Likes radio inputs&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="unit-8"&gt;
+            &lt;label class="radio mr-1"&gt;
+                &lt;input type="radio" name="radios" value="yes"&gt;
+                Yes
+            &lt;/label&gt;
+            &lt;label class="radio"&gt;
+                &lt;input type="radio" name="radios" value="no"&gt;
+                No
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/forms/controls.html' | absolute_url}}" class="button">previous</a>
+                <a href="{{ '/docs/forms/addons.html' | absolute_url}}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}   
+</body>
+</html>

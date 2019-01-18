@@ -1,0 +1,97 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Display</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Display</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">utilities</li>
+                <li class="step">display.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag caution">utilities</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag info">yes</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.flex</span></li>
+                            <li><span class="snippet">.block</span></li>
+                            <li><span class="snippet">.inline</span></li>
+                            <li><span class="snippet">.inline-block</span></li>
+                            <li><span class="snippet">.absent</span></li>
+                            <li><span class="snippet">.invisible</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.flex-(breakpoint)</span></li>
+                            <li><span class="snippet">.block-(breakpoint)</span></li>
+                            <li><span class="snippet">.inline-(breakpoint)</span></li>
+                            <li><span class="snippet">.inline-block-(breakpoint)</span></li>
+                            <li><span class="snippet">.absent-(breakpoint)</span></li>
+                            <li><span class="snippet">.invisible-(breakpoint)</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">Use the display utility classes to override the display type for an element.</p>
+            <h3 class="mb-2 fw-bold">Absent</h3>
+            <p class="mb-2">The <span class="snippet">.absent</span> class is an abstraction on <span class="snippet">display: none;</span>. Reduce the width of your browser to see the example in action.</p>
+            <div class="text-center mb-2">
+                <p class="absent-md absent-lg">small breakpoint</p>
+                <p class="absent-sm absent-lg">medium breakpoint</p>
+                <p class="absent-sm absent-md">large breakpoint</p>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="text-center mb-2"&gt;
+    &lt;p class="absent-md absent-lg"&gt;small breakpoint&lt;/p&gt;
+    &lt;p class="absent-sm absent-lg"&gt;medium breakpoint&lt;/p&gt;
+    &lt;p class="absent-sm absent-md"&gt;large breakpoint&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Invisible</h3>
+            <p class="mb-2">Use the <span class="snippet">.invisible</span> class to set <span class="snippet">visibility: hidden;</span> on an element. Reduce the width of your browser to see the example in action.</p>
+            <div class="clearfix mb-2">
+                <figure class="square x3 primary mr-1 invisible-sm to-left"></figure>
+                <figure class="square x3 info mr-1 invisible-md to-left"></figure>
+                <figure class="square x3 danger mr-1 invisible-lg to-left"></figure>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="clearfix mb-2"&gt;
+    &lt;figure class="square x3 primary mr-1 invisible-sm to-left"&gt;&lt;/figure&gt;
+    &lt;figure class="square x3 info mr-1 invisible-md to-left"&gt;&lt;/figure&gt;
+    &lt;figure class="square x3 danger mr-1 invisible-lg to-left"&gt;&lt;/figure&gt;
+&lt;/div&gt;</code></pre>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/utilities/border.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/utilities/position.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

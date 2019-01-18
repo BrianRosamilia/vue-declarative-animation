@@ -1,0 +1,100 @@
+@import "../base/colors.scss";
+@import "../base/global-variables.scss";
+
+$addon-height: $CONTROL_HEIGHT;
+$addon-border-width: 0.1rem;
+$addon-background-color: $light-white;
+$addon-border-color: $BORDER_COLOR;
+$addon-spacing: 1rem;
+$addon-border-radius: 0.25em;
+
+// div
+.addons {
+  font-size: 1.6rem;
+  display: flex;
+
+  // span
+  & > .addon, & > .textbox {
+    font-size: inherit;
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &:not(:last-child) {
+      margin-right: -1 * $addon-border-width;
+    }
+  }
+
+  // div
+  & > .icons {
+    font-size: inherit;
+
+    &:first-child .textbox {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:not(:first-child):not(:last-child) .textbox {
+      border-radius: 0;
+    }
+
+    &:last-child .textbox {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &:not(:last-child) {
+      margin-right: -1 * $addon-border-width;
+    }
+  }
+
+  // span
+  .addon {
+    height: $addon-height;
+    line-height: $addon-height;
+    background-color: $addon-background-color;
+    border: $addon-border-width solid $addon-border-color;
+    border-radius: $addon-border-radius;
+    padding: 0 $addon-spacing;
+    white-space: nowrap;
+
+    &.interactive {
+      padding: 0;
+      border: 0;
+      background: none;
+
+      .button {
+        font-size: inherit;
+        border-radius: inherit;
+        height: inherit;
+        padding: 0 $addon-spacing;
+      }
+
+      // select
+      .textbox {
+        font-size: inherit;
+        width: auto;
+        background-color: $addon-background-color;
+        border-color: $addon-border-color;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

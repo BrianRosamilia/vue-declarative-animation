@@ -1,0 +1,134 @@
+<script type="text/javascript">
+    (function(){
+        const sideMenu = document.querySelector('#sideMenu');
+        const topMenu = document.querySelector('#topMenu');
+        const toggleSideMenuButtons = document.querySelectorAll('.toggle-side-menu');
+        const toggleTopMenuButton = document.querySelector('.toggle-top-menu');
+        const main = document.querySelector('#main');
+
+        function getSideMenuState() {
+            let state = JSON.parse(sessionStorage.getItem('sideMenuState'));
+
+            if (!state) {
+                state = {};
+                state.isIn = true;
+                state.parentTabsOpen = [];
+            }
+            else {
+                if (!state.hasOwnProperty('isIn'))
+                    state.isIn = true;
+                else if (!state.hasOwnProperty('parentTabsOpen'))
+                    state.parentTabsOpen = [];
+            }
+
+            return state;
+        }
+
+        function toggleSideMenu() {
+            let state = getSideMenuState();
+
+            sideMenu.classList.toggle('is-in');
+            main.classList.toggle('ml-0');
+            main.classList.toggle('unit-12');
+
+            if (sideMenu.classList.contains('is-in'))
+                state.isIn = true;
+            else
+                state.isIn = false;
+
+           sessionStorage.setItem('sideMenuState', JSON.stringify(state));
+        }
+
+        function setActiveTabs() {
+            let currentTabName = document.querySelector('h1').innerText;
+            let innerTabLinks = sideMenu.querySelectorAll('ul ul .tab-a');
+            let state = getSideMenuState();
+
+            for (let index = 0; index < innerTabLinks.length; index++) {
+                if (innerTabLinks[index].innerText === currentTabName) {
+                    let parentTab = innerTabLinks[index].parentElement;
+                    let grandParentTabA = parentTab.parentElement.previousElementSibling;
+
+                    parentTab.classList.add('is-active');
+                    grandParentTabA.parentElement.classList.add('is-active');
+
+                    if (state.parentTabsOpen.indexOf(grandParentTabA.innerText) === -1) {
+                        state.parentTabsOpen.push(grandParentTabA.innerText);
+                    }
+                    break;
+                }
+            }
+
+            sessionStorage.setItem('sideMenuState', JSON.stringify(state));
+        }
+
+        function setOpenTabs() {
+            const nestedTabLists = sideMenu.querySelectorAll('.tab-a + ul');
+            let state = getSideMenuState();
+
+            for (let index = 0; index < nestedTabLists.length; index++) {
+                let tabA = nestedTabLists[index].previousElementSibling;
+
+                if (state.parentTabsOpen.indexOf(tabA.innerText) !== -1) {
+                    nestedTabLists[index].classList.remove('absent');
+                }
+            }
+        }
+
+        function handleDocsNavClick(e) {
+            const target = e.target;
+            const sibling = target.nextElementSibling;
+            let state = getSideMenuState();
+
+            if (target.classList.contains('tab-a') && sibling) {
+                e.preventDefault();
+                sibling.classList.toggle('absent');
+
+                if (sibling.classList.contains('absent') && state.parentTabsOpen.indexOf(e.target.innerText) !== -1) {
+                    const index = state.parentTabsOpen.indexOf(e.target.innerText);
+
+                    state.parentTabsOpen.splice(index, 1);
+                }
+                else if (!sibling.classList.contains('absent') && state.parentTabsOpen.indexOf(e.target.innerText) === -1) {
+                    state.parentTabsOpen.push(e.target.innerText);
+                }
+
+                sessionStorage.setItem('sideMenuState', JSON.stringify(state));
+            }
+        }
+
+        function initializePage() {
+            let state = getSideMenuState();
+
+            if (!state.isIn)
+                toggleSideMenu();
+
+            setActiveTabs();
+            setOpenTabs();
+        }
+
+        initializePage();
+
+        toggleSideMenuButtons.forEach(function(element) {
+            element.addEventListener('click', toggleSideMenu);
+        });
+
+        toggleTopMenuButton.addEventListener('click', function(e){
+            let state = getSideMenuState();
+
+            topMenu.classList.toggle('absent');
+
+            if (sideMenu.classList.contains('is-in')) {
+                sideMenu.classList.remove('is-in');
+                state.isIn = false;
+
+
+                main.classList.add('ml-0');
+                main.classList.add('unit-12');
+            }
+        });
+
+        sideMenu.addEventListener('click', handleDocsNavClick);
+        topMenu.addEventListener('click', handleDocsNavClick);
+    })();
+</script>

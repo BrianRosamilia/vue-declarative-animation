@@ -1,0 +1,64 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Sandbox</title>
+    <style>
+        #hero {
+            /*display: flex;*/
+            /*align-items: stretch;*/
+            /*height: 100vh;*/
+            /*padding: 2.4rem;*/
+            background-color: lightblue;
+            background-image: linear-gradient(45deg, lightblue, pink);
+
+        }
+
+        #hero .inner {
+            /*width: 100%;*/
+            background-color: rgb(250, 250, 250);
+            border-radius: 0.25em;
+            /*padding: 2.4rem;*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+            /*align-items: center;*/
+        }
+
+        #heroTitle {
+            letter-spacing: 1.2em;
+            text-indent: 1.2em;
+            word-break: break-all;
+            text-transform: uppercase;
+            background-image: linear-gradient(45deg, lightblue, pink);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="hero" class="flex cross-stretch h-1-vh p-2">
+        <div class="inner flex center cross-center w-1 r p-2 ">
+            <div class="text-center">
+                <h1 id="heroTitle" class="huge-2 h2-sm">sandbox</h1>
+                <h3 class="text-muted mb-1 h4-sm">A lightweight CSS only framework</h3>
+                <a href="{{ '/docs/get-started.html' | absolute_url }}" class="button outlined h5-sm">Get Started</a>
+                <a href="{{'/docs/base/breakpoint-values.html' | absolute_url}}" class="button outlined h5-sm">Docs</a>
+                <a href="https://github.com/dlcNine/sandbox" target="_blank" class="button dark h5-sm">
+                    <i class="fa fa-github"></i>
+                    Github
+                </a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let heroTitle = document.getElementById('heroTitle');
+        if (heroTitle.style.backgroundClip === undefined || heroTitle.style.webkitBackgroundClip === undefined) {
+            heroTitle.style.backgroundImage = 'none';
+            heroTitle.style.color = 'lightblue';
+        }
+    </script>
+</body>
+</html>

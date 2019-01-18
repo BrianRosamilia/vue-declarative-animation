@@ -1,0 +1,160 @@
+@import "../base/global-variables.scss";
+@import "../base/mixins.scss";
+@import "../base/colors.scss";
+
+$tab-a-x-padding: 1em;
+$tab-a-y-padding: 0.5em;
+$tab-a-border-radius: 0.125em;
+$tab-a-hover-background-color: $light-primary;
+
+$tabs-vertical-a-padding: 0.25em;
+$tabs-vertical-nested-margin-left: 1em;
+
+// ul
+.tab-a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    border: 0.1rem solid transparent;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+// ul
+.tabs:not(.vertical) {
+    font-size: 1.6rem;
+
+    // li
+    .tab {
+        display: inline-block;
+
+        &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
+            color: $alpha-light-black;
+        }
+    }
+
+    // li
+    .tab-item, .tab-a {
+        padding: $tab-a-y-padding $tab-a-x-padding;
+    }
+
+    &.underline .tab {
+        &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
+            text-decoration: underline;
+            color: $alpha-black;
+        }
+    }
+
+    &.border-bottoms .tab {
+        &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
+            border-bottom: 0.1rem solid $tab-a-hover-background-color;
+            color: $alpha-black;
+        }
+    }
+
+    &.solid {
+        &.r-0 .tab-a {
+            border-radius: 0;
+        }
+
+        &.r-round .tab-a {
+            border-radius: $RADIUS_ROUND;
+        }
+
+        .tab {
+            &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
+                background-color: $tab-a-hover-background-color;
+                color: $alpha-white;
+            }
+
+            .tab-a {
+                border-radius: $tab-a-border-radius;
+            }
+        }
+    }
+
+    &.border-bottomless {
+        border-bottom: 0.1rem solid $BORDER_COLOR;
+
+        .tab {
+            &:not(:last-child) {
+                margin-right: -0.1rem;
+            }
+
+            margin-bottom: -0.1rem;
+
+            &.is-active .tab-a {
+                border: 0.1rem solid $BORDER_ACTIVE_COLOR;
+                border-bottom: 0.1rem solid $BODY_BACKGROUND_COLOR;
+                color: $alpha-black;
+            }
+
+            .tab-a {
+                border-radius: $tab-a-border-radius;
+                border-radius: $tab-a-border-radius $tab-a-border-radius 0em 0em;
+
+                &:hover, &:focus {
+                    border: 0.1rem solid $BORDER_COLOR;
+                    border-bottom: 0.1rem solid $BODY_BACKGROUND_COLOR;
+                    color: $alpha-black;
+                }
+            }
+        }
+    }
+}
+
+// ul
+.tabs.vertical {
+    font-size: 1.6rem;
+
+    // ul
+    .tabs.vertical {
+        font-size: inherit;
+    }
+
+    // li
+    .tab {
+        &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
+            color: $alpha-light-black;
+        }
+    }
+
+    .tab-item, .tab-a {
+        padding: $tabs-vertical-a-padding;
+
+    }
+
+    &.indent-nested .tabs.vertical {
+        margin-left: $tabs-vertical-nested-margin-left;
+    }
+
+    &.underline .tab {
+        &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
+            text-decoration: underline;
+            color: $alpha-black;
+        }
+    }
+
+    &.border-lefts .tab {
+        &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
+            border-left: 0.1rem solid $tab-a-hover-background-color;
+            color: $alpha-black;
+        }
+    }
+
+    &.solid .tab {
+        .tab-a {
+            border-radius: $tab-a-border-radius;
+        }
+        
+        &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
+            background-color: $tab-a-hover-background-color;
+            color: $alpha-white;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,90 @@
+@import "./global-variables.scss";
+
+@mixin clearfix() {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+@mixin tight-cancel($spacing) {
+  margin: -1 * $spacing;
+
+  div[class*="unit-"] {
+    padding: $spacing;
+  }
+}
+
+@mixin tight-responsive($spacing) {
+  margin: -0.5 * $spacing;
+
+  div[class*="unit-"] {
+    padding: 0.5 * $spacing;
+  }
+}
+
+@mixin border-background-color($color) {
+  border-color: $color;
+  background-color: $color;
+}
+
+@mixin button-default($light-color, $dark-color, $shadow-color) {
+  &:hover {
+    @include border-background-color($light-color);
+  }
+
+  &:active {
+   @include border-background-color($dark-color);
+  }
+
+  &:focus:not([disabled]) {
+    box-shadow: 0 0 0 $CONTROL_SHADOW_SPREAD $shadow-color;
+  }
+}
+
+@mixin button-outlined($text-color, $hover-text-color) {
+  color: $text-color;
+
+  &:hover {
+    color: $hover-text-color;
+  }
+}
+
+@mixin field-theme($light-color, $medium-color, $box-shadow-color) {
+  background-color: inherit;
+  color: $FONT_COLOR;
+
+  input.textbox, select.textbox, textarea.textbox {
+    border-color: $light-color;
+
+    &:focus {
+      box-shadow: 0 0 0 $CONTROL_SHADOW_SPREAD $box-shadow-color;
+    }
+  }
+
+  p.help {
+    color: $medium-color;
+  }
+}
+
+@mixin child-radius-rules() {
+  &:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+
+  &:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+
+
+
+
+
+

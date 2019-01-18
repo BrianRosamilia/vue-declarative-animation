@@ -1,0 +1,158 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Addons</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Addons</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">forms</li>
+                <li class="step">addons.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag info">flex</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag info">yes</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag danger">no</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-12">
+                        <ul class="ul">
+                            <li><span class="snippet">.addons</span></li>
+                            <li><span class="snippet">.addons .addon</span></li>
+                            <li><span class="snippet">.addons .addon.interactive</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">An <span class="snippet">.addons</span> wraps around a <span class="snippet">.textbox</span> or <span class="snippet">.icons</span>, and can attach extra information or controls to the sides of it, by using an <span class="snippet">.addon</span>.</p>
+            <div class="grid mb-2">
+                <div class="unit-12 unit-6-lg">
+                    <div class="addons">
+                        <span class="addon">$</span>
+                        <input type="number" class="textbox">
+                        <span class="addon">.00</span>
+                    </div>
+                </div>
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code"><code>&lt;div class="addons"&gt;
+    &lt;span class="addon"&gt;$&lt;/span&gt;
+    &lt;input type="number" class="textbox"&gt;
+    &lt;span class="addon"&gt;.00&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Addon interactive</h3>
+            <p class="mb-2">Use the <span class="snippet">.interactive</span> class on an <span class="snippet">.addon</span> to use either a <span class="snippet">.button</span> or <span class="snippet">.textbox</span> within that <span class="snippet">.addon</span>.</p>
+            <div class="addons mb-2">
+                <span class="addon interactive">
+                    <select class="textbox">
+                        <option value="" selected disabled>currency</option>
+                        <option value="dollars">dollars</option>
+                        <option value="dollarydoos">dollarydoos</option>
+                    </select>
+                </span>
+                <input type="number" class="textbox">
+                <span class="addon interactive">
+                    <button class="button primary">submit</button>
+                </span>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="addons"&gt;
+    &lt;span class="addon interactive"&gt;
+        &lt;select class="textbox"&gt;
+            &lt;option value="" selected disabled&gt;currency&lt;/option&gt;
+            &lt;option value="dollars"&gt;dollars&lt;/option&gt;
+            &lt;option value="dollarydoos"&gt;dollarydoos&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/span&gt;
+    &lt;input type="number" class="textbox"&gt;
+    &lt;span class="addon interactive"&gt;
+        &lt;button class="button primary"&gt;submit&lt;/button&gt;
+    &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Font size scaling</h3>
+            <p class="mb-2">Use the <a href="{{ '/docs/utilities/font-size.html' | absolute_url }}" class="a">font size utility</a> classes on an <span class="snippet">.addons</span> to scale the elements within it.</p>
+            <div class="addons h6 mb-2">
+                <span class="addon interactive">
+                    <select class="textbox">
+                        <option value="" selected disabled>currency</option>
+                        <option value="dollars">dollars</option>
+                        <option value="dollarydoos">dollarydoos</option>
+                    </select>
+                </span>
+                <input type="number" class="textbox">
+                <span class="addon interactive">
+                    <button class="button primary">submit</button>
+                </span>
+            </div>
+            <div class="addons h3 mb-2">
+                <span class="addon interactive">
+                    <select class="textbox">
+                        <option value="" selected disabled>currency</option>
+                        <option value="dollars">dollars</option>
+                        <option value="dollarydoos">dollarydoos</option>
+                    </select>
+                </span>
+                <input type="number" class="textbox">
+                <span class="addon interactive">
+                    <button class="button primary">submit</button>
+                </span>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="addons h6 mb-2"&gt;
+    &lt;span class="addon interactive"&gt;
+        &lt;select class="textbox"&gt;
+            &lt;option value="" selected disabled&gt;currency&lt;/option&gt;
+            &lt;option value="dollars"&gt;dollars&lt;/option&gt;
+            &lt;option value="dollarydoos"&gt;dollarydoos&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/span&gt;
+    &lt;input type="number" class="textbox"&gt;
+    &lt;span class="addon interactive"&gt;
+        &lt;button class="button primary"&gt;submit&lt;/button&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="addons h3 mb-2"&gt;
+    &lt;span class="addon interactive"&gt;
+        &lt;select class="textbox"&gt;
+            &lt;option value="" selected disabled&gt;currency&lt;/option&gt;
+            &lt;option value="dollars"&gt;dollars&lt;/option&gt;
+            &lt;option value="dollarydoos"&gt;dollarydoos&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/span&gt;
+    &lt;input type="number" class="textbox"&gt;
+    &lt;span class="addon interactive"&gt;
+        &lt;button class="button primary"&gt;submit&lt;/button&gt;
+    &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/forms/field.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/forms/icons.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

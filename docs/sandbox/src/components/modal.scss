@@ -1,0 +1,26 @@
+@import "../base/colors.scss";
+
+$overlay-background-color: $alpha-light-black;
+$modal-padding: 1.25em;
+$modal-border-radius: 0.25em;
+$modal-background-color: $white;
+
+// div
+.overlay {
+  position: fixed;
+  z-index: 55;
+  top: 0;
+  left: 0;
+  height: 100.1%;
+  width: 100%;
+  overflow-y: auto;
+  background-color: $overlay-background-color;
+}
+
+// div
+.modal {
+  font-size: 1.6rem;
+  padding: $modal-padding;
+  border-radius: $modal-border-radius;
+  background-color: $modal-background-color;
+}

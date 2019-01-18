@@ -1,0 +1,121 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Spacing</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Spacing</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">utilities</li>
+                <li class="step">spacing.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag info">yes</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.m-(level)</span></li>
+                            <li><span class="snippet">.mt-(level)</span></li>
+                            <li><span class="snippet">.mb-(level)</span></li>
+                            <li><span class="snippet">.ml-(level)</span></li>
+                            <li><span class="snippet">.mr-(level)</span></li>
+                            <li><span class="snippet">.mx-(level)</span></li>
+                            <li><span class="snippet">.my-(level)</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.m-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.mt-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.mb-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.ml-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.mr-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.mx-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.my-(level)-(breakpoint)</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-12">
+                        <ul class="ul">
+                            <li><span class="snippet">.mx-auto</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.p-(level)</span></li>
+                            <li><span class="snippet">.pt-(level)</span></li>
+                            <li><span class="snippet">.pb-(level)</span></li>
+                            <li><span class="snippet">.pl-(level)</span></li>
+                            <li><span class="snippet">.pr-(level)</span></li>
+                            <li><span class="snippet">.px-(level)</span></li>
+                            <li><span class="snippet">.py-(level)</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.p-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.pt-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.pb-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.pl-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.pr-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.px-(level)-(breakpoint)</span></li>
+                            <li><span class="snippet">.py-(level)-(breakpoint)</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">In the above classes <span class="snippet">m</span> stands for <span class="snippet">margin</span>, and <span class="snippet">p</span> stands for <span class="snippet">padding</span>.</p>
+            <p class="mb-2"><span class="snippet">t</span> stands for <span class="snippet">top</span>, <span class="snippet">b</span> stands for <span class="snippet">bottom</span>, <span class="snippet">l</span> stands for <span class="snippet">left</span>, <span class="snippet">r</span> stands for <span class="snippet">right</span>, <span class="snippet">x</span> stands for the <span class="snippet">x</span> axis, and <span class="snippet">y</span> stands for the <span class="snippet">y</span> axis.</p>
+            <p class="mb-2">The values that can be plugged into <span class="snippet">(level)</span> as seen above are determined by the <span class="snippet">$SPACING_LEVELS</span> global variable, which Sandbox defaults to a value of <span class="snippet">4</span>. This means that the values <span class="snippet">1</span>, <span class="snippet">2</span>, <span class="snippet">3</span>, <span class="snippet">4</span> could be plugged into <span class="snippet">(level)</span>. If you set <span class="snippet">$SPACING_LEVELS</span> to <span class="snippet">6</span> and ran a build, the values <span class="snippet">1</span> - <span class="snippet">6</span> could be plugged in.</p>
+            <p class="mb-2">A non integer value that can be plugged into <span class="snippet">(level)</span>, regardless of what <span class="snippet">$SPACING_LEVELS</span> value is used, is <span class="snippet">half</span>. Each of these values is a multiplier on the global <span class="snippet">$UNIT_SPACING</span> value which is used.</p>
+            <p class="mb-2">As always, the values that can be plugged into <span class="snippet">(breakpoint)</span> are any of the breakpoint suffixes: <span class="snippet">sm</span>, <span class="snippet">md</span>, <span class="snippet">lg</span>.</p>
+            <h3 class="mb-2 fw-bold">Example</h3>
+            <p class="mb-2">Reduce the width of your browser to see the example in action.</p>
+            <div class="clearfix b mb-2">
+                <div class="p-1 p-half-sm p-3-lg danger to-left"></div>
+                <div class="p-1 m-1 m-half-sm m-3-lg dark to-right"></div>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="clearfix b mb-2"&gt;
+    &lt;div class="p-1 p-half-sm p-3-lg danger to-left"&gt;&lt;/div&gt;
+    &lt;div class="p-1 m-1 m-half-sm m-3-lg dark to-right"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Margin x auto</h3>
+            <p class="mb-2">Use the <span class="snippet">.mx-auto</span> class on a block level element with a fixed width to center it along the x axis of its parent.</p>
+            <div class="danger mx-auto mb-2" style="width: 5rem; height: 5rem;"></div>
+            <pre class="code"><code>&lt;div class="danger mx-auto mb-2" style="width: 5rem; height: 5rem;"&gt;&lt;/div&gt;</code></pre>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/utilities/font-size.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/utilities/border.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

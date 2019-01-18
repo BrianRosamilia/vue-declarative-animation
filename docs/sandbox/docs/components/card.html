@@ -1,0 +1,131 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Card</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Card</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">components</li>
+                <li class="step">card.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag danger">no</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag danger">no</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.card</span></li>
+                            <li><span class="snippet">.card .card-header</span></li>
+                            <li><span class="snippet">.card .card-body</span></li>
+                            <li><span class="snippet">.card .card-footer</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.card.r-0</span></li>
+                            <li><span class="snippet">.card .card-header.image</span></li>
+                            <li><span class="snippet">.card .card-body.image</span></li>
+                            <li><span class="snippet">.card .card-footer.image</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">A <span class="snippet">.card</span> is an extremely versatile way of organizing content, and splitting it into subdivisions. Any content you want can be put into the subdivisions of a <span class="snippet">.card</span>.</p>
+            <h3 class="mb-2 fw-bold">Structure</h3>
+            <div class="grid mb-2">
+                <div class="unit-4 unit-12-sm">
+                    <div class="card">
+                        <div class="card-header">lorem</div>
+                        <div class="card-body">ipsum</div>
+                        <div class="card-footer">dolor</div>
+                    </div>
+                </div>
+                <div class="unit-8 unit-12-sm">
+                    <pre class="code"><code>&lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;lorem&lt;/div&gt;
+    &lt;div class="card-body"&gt;ipsum&lt;/div&gt;
+    &lt;div class="card-footer"&gt;dolor&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <div class="card b-0 mb-2">
+                <div class="card-body info">
+                    <p>There's no requirement that all the subdivisions of a card be used together. If you only wanted to use a <span class="snippet">.card-body</span> inside of a <span class="snippet">.card</span>, you could.</p>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Image</h3>
+            <p class="mb-2">Using the <span class="snippet">.image</span> class on a subdivison of a <span class="snippet">.card</span> makes it so an <span class="snippet">img</span> element used within that subdivison fills up its space.</p>
+            <div class="grid mb-2">
+                <div class="unit-4 unit-12-sm">
+                    <div class="card">
+                        <div class="card-header light p-4 text-center">
+                            <p>Image</p>
+                        </div>
+                        <div class="card-body">ipsum</div>
+                        <div class="card-footer">dolor</div>
+                    </div>
+                </div>
+                <div class="unit-8 unit-12-sm">
+                    <pre class="code"><code>&lt;div class="card"&gt;
+    &lt;div class="card-header image"&gt;
+        &lt;img src="/path/to/img" alt="image"&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;ipsum&lt;/div&gt;
+    &lt;div class="card-footer"&gt;dolor&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Radius utility</h3>
+            <p class="mb-2">Using the <span class="snippet">.r-0</span> utility class on a <span class="snippet">.card</span> zeroes out the <span class="snippet">border-radius</span> for any card subdivisions used within it.</p>
+            <div class="grid mb-2">
+                <div class="unit-4 unit-12-sm">
+                    <div class="card r-0">
+                        <div class="card-header">lorem</div>
+                        <div class="card-body">ipsum</div>
+                        <div class="card-footer">dolor</div>
+                    </div>
+                </div>
+                <div class="unit-8 unit-12-sm">
+                    <pre class="code"><code>&lt;div class="card r-0"&gt;
+    &lt;div class="card-header"&gt;lorem&lt;/div&gt;
+    &lt;div class="card-body"&gt;ipsum&lt;/div&gt;
+    &lt;div class="card-footer"&gt;dolor&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/components/modal.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/components/tabs.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

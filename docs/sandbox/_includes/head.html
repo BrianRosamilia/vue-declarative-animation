@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Sandbox -->
+<link rel="stylesheet" href=" {{ '/dist/sandbox-min.css' | absolute_url }}">
+<!-- temp -->
+<style>
+#main, #sideMenu { transition: all 400ms; }
+#sideMenu { transform: translate(-100%, 0%); }
+#sideMenu.is-in { transform: translate(0%, 0%); }
+
+#topMenu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+}
+
+</style>
+<!-- font awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

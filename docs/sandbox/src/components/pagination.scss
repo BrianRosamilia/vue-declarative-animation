@@ -1,0 +1,49 @@
+@import "../base/global-variables";
+@import "../base/colors.scss";
+
+$pagination-color: $alpha-light-black;
+$pagination-active-color: $light-primary;
+$pagination-hover-color: $alpha-black;
+$pagination-page-border-radius: 0.25em;
+$pagination-page-a-padding: 0.25em;
+
+// ul
+.pagination {
+    font-size: 1.6rem;
+
+    // li
+    .page {
+        display: inline-block;
+        border-radius: $pagination-page-border-radius;
+        color: $pagination-color;
+        
+        &.is-active {
+            border: 0.1rem solid $pagination-active-color;
+            color: $pagination-active-color;
+        }
+
+        &.is-disabled .page-a {
+            opacity: $DISABLED_OPACITY;
+            pointer-events: none;
+        }
+
+        &:not(.is-disabled):not(.is-active) .page-a {
+            &:hover, &:focus {
+                color: $pagination-hover-color;
+            }
+        }
+
+        // a
+        .page-a {
+            display: inline-block;
+            padding: $pagination-page-a-padding;
+            color: inherit;
+            text-decoration: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+}

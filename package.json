@@ -1,0 +1,42 @@
+{
+  "name": "vue-declarative-animation",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "quality": "eslint public2/ --ext .js,.vue --fix",
+    "watch": "parcel watch ./docs/index.html --public-url . --out-dir ./public/",
+    "buildExample": "rm -rf public&&cross-env NODE_ENV=development&& parcel build ./docs/index.html --no-minify --public-url ./ --out-dir ./public",
+    "dist": "cross-env NODE_ENV=production && parcel build ./src/browserBuild.js --out-file ./dist/index.js --no-source-maps",
+    "build": "npm-run-all buildExample dist"
+  },
+  "keywords": [
+    "vue",
+    "vue animations",
+    "vue velocity"
+  ],
+  "author": "Brian Rosamilia",
+  "license": "MIT",
+  "dependencies": {
+    "velocity-animate": "^1.5.2",
+    "vue": "^2.5.22"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.3.1",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.10.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "express": "^4.15.3",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.11.0",
+    "prismjs": "^1.15.0",
+    "sass": "^1.16.0",
+    "vue-hot-reload-api": "^2.3.1",
+    "vue-prism-editor": "^0.1.2",
+    "vue-router": "^3.0.2",
+    "vue-template-compiler": "^2.5.22"
+  }
+}

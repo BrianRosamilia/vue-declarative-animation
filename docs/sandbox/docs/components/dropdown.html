@@ -1,0 +1,143 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Dropdown</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Dropdown</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">components</li>
+                <li class="step">dropdown.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag info">absolute</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag info">25</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag danger">no</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag danger">no</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-6-lg unit-12">
+                        <ul class="ul">
+                            <li><span class="snippet">.reveal-wrapper .reveal-trigger-focus</span></li>
+                            <li><span class="snippet">.reveal-wrapper .reveal-trigger-hover</span></li>
+                            <li><span class="snippet">.reveal-wrapper .reveal-target</span></li>
+                            <li><span class="snippet">.reveal-wrapper .reveal-target.is-revealed</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6-lg unit-12">
+                        <ul class="ul">
+                            <li><span class="snippet">.dropdown</span></li>
+                            <li><span class="snippet">.dropdown.align-right</span></li>
+                            <li><span class="snippet">.dropdown.on-top</span></li>
+                            <li><span class="snippet">.dropdown.on-left</span></li>
+                            <li><span class="snippet">.dropdown.on-right</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6-lg unit-12">
+                        <ul class="ul">
+                            <li><span class="snippet">.dropdown .dropdown-item</span></li>
+                            <li><span class="snippet">.dropdown .dropdown-divider</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">Sandbox's CSS only dropdowns make use of a <span class="snippet">.reveal-wrapper</span> which contains the things necessary to hide or show the target, depending on the trigger action.</p>
+            <h3 class="mb-2 fw-bold">Reveal Wrapper</h3>
+            <p class="mb-2">The general structure of a <span class="snippet">.reveal-wrapper</span> is as follows.</p>
+            <pre class="code mb-2"><code>.reveal-wrapper
+    .reveal-trigger-focus <span class="text-muted">&lt;!-- or .reveal-trigger-hover --&gt;</span>
+    .reveal-target</code></pre>
+            <div class="card b-0 mb-2">
+                <div class="card-body info">
+                    <p>For the reveal to work, the <span class="snippet">.reveal-target</span> must be the immediate sibling of the <span class="snippet">.reveal-trigger-(type)</span></p>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Example</h3>
+            <div class="text-center">
+                <div class="reveal-wrapper">
+                    <button class="button reveal-trigger-focus">reveal</button>
+                    <div class="dropdown reveal-target">
+                        <a href="" class="dropdown-item">item 1</a>
+                        <a href="" class="dropdown-item">item 2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4"></div>
+            <pre class="code mb-2"><code>&lt;div class="reveal-wrapper"&gt;
+    &lt;button class="button reveal-trigger-focus"&gt;reveal&lt;/button&gt;
+    &lt;div class="dropdown reveal-target"&gt;
+        &lt;a href="" class="dropdown-item"&gt;item 1&lt;/a&gt;
+        &lt;a href="" class="dropdown-item"&gt;item 2&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <p class="mb-2">If you want to implement your own JS solution for revealing targets, make use of the <span class="snippet">.is-revealed</span> class on a <span class="snippet">.reveal-target</span>.</p>
+            <h3 class="mb-2 fw-bold">Dropdowns</h3>
+            <p class="mb-2">Use a <span class="snippet">.dropdown-item</span> inside of a <span class="snippet">.dropdown</span> to either contain content, or for a link.</p>
+            <div class="reveal-wrapper">
+                <button class="button">revealed</button>
+                <div class="dropdown">
+                    <a href="" class="dropdown-item">link</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-item">
+                        <button class="button primary wide">content</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4"></div>
+            <div class="p-1"></div>
+            <pre class="code mb-2"><code>&lt;div class="dropdown"&gt;
+    &lt;a href="" class="dropdown-item"&gt;link&lt;/a&gt;
+    &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+    &lt;div class="dropdown-item"&gt;
+        &lt;button class="button primary wide"&gt;content&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Dropdown Placement</h3>
+            <p class="mb-2">Use the <span class="snippet">.align-right</span>, <span class="snippet">.on-top</span>, <span class="snippet">.on-left</span>, or <span class="snippet">.on-right</span> classes on a <span class="snippet">.dropdown</span> to adjust the placement or alignment of the dropdown.</p>
+            <div class="reveal-wrapper">
+                <button class="button">on right</button>
+                <div class="dropdown on-right">
+                    <a href="" class="dropdown-item">item 1</a>
+                    <a href="" class="dropdown-item">item 2</a>
+                </div>
+            </div>
+            <div class="p-4"></div>
+            <pre class="code mb-2"><code>&lt;div class="reveal-wrapper"&gt;
+    &lt;button class="button"&gt;on right&lt;/button&gt;
+    &lt;div class="dropdown on-right"&gt;
+        &lt;a href="" class="dropdown-item"&gt;item 1&lt;/a&gt;
+        &lt;a href="" class="dropdown-item"&gt;item 2&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/components/list-items.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/components/pagination.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

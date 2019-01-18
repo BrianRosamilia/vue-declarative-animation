@@ -1,0 +1,67 @@
+@import "../base/global-variables.scss";
+@import "../base/colors.scss";
+
+$loading-border-color: $medium-gray;
+$loading-size: 1em;
+$loading-size-x2: 2em;
+$loading-size-x3: 3em;
+$loading-size-x4: 4em;
+
+@keyframes revolution {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// span
+.loading {
+  display: inline-block;
+  position: relative;
+  width: $loading-size;
+  height: $loading-size;
+  border-color: $loading-border-color;
+  vertical-align: text-bottom;
+
+  &.x2 {
+    width: $loading-size-x2;
+    height: $loading-size-x2;
+  }
+
+  &.x3 {
+    width: $loading-size-x3;
+    height: $loading-size-x3;
+  }
+
+  &.x4 {
+    width: $loading-size-x4;
+    height: $loading-size-x4;
+  }
+
+  &.is-paused::before {
+    animation-play-state: paused;
+  }
+
+  &.is-reversed::before {
+    animation-direction: reverse;
+  }
+  
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: inherit;
+    border-radius: $RADIUS_ROUND;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    width: inherit;
+    height: inherit;
+    animation: revolution 650ms linear 0ms infinite normal;
+  }
+}

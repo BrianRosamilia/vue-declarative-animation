@@ -1,0 +1,42 @@
+@import "../base/colors.scss";
+
+$steps-color: $alpha-light-black;
+$steps-hover-color: $alpha-black;
+$steps-last-child-color: $light-primary;
+$steps-separator-x-spacing: 0.25em;
+
+// ul
+.steps {
+    font-size: 1.6rem;
+
+    // li
+    .step {
+        display: inline-block;
+        color: $steps-color;
+
+        &:last-child {
+            color: $steps-last-child-color;
+        }
+
+        // a
+        .step-a {
+            text-decoration: none;
+            color: inherit;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &:not(:last-child) .step-a {
+            &:hover, &:focus {
+                color: $steps-hover-color;
+            }
+        }
+
+        &:not(:last-child)::after {
+            content: '/';
+            margin: 0rem $steps-separator-x-spacing;
+        }
+    }
+}

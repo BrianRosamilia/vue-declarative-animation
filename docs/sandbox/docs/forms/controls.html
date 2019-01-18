@@ -1,0 +1,393 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Controls</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Controls</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">forms</li>
+                <li class="step">controls.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag info">block</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag info">yes</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag danger">no</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.textbox</span></li>
+                            <li><span class="snippet">.textbox[readonly]</span></li>
+                            <li><span class="snippet">.textbox[disabled]</span></li>
+                            <li><span class="snippet">.textbox[multiple]</span></li>
+                            <li><span class="snippet">textarea.textbox.no-resize</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.checkbox</span></li>
+                            <li><span class="snippet">.checkbox[disabled]</span></li>
+                            <li><span class="snippet">.checkbox.switch</span></li>
+                            <li><span class="snippet">.radio</span></li>
+                            <li><span class="snippet">.radio[disabled]</span></li>
+                            <li><span class="snippet">.radio.switch</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">The <span class="snippet">.textbox</span> class can be used on multiple types of <span class="snippet">input</span> element, as well as the <span class="snippet">select</span> and <span class="snippet">textarea</span> elements. Any element with the <span class="snippet">.textbox</span> class applied will have its <span class="snippet">display</span> set to <span class="snippet">block</span> and its <span class="snippet">width</span> set to <span class="snippet">100%</span>.</p>
+            <input type="text" class="textbox mb-half" placeholder="text">
+            <input type="password" class="textbox mb-half" placeholder="password">
+            <input type="number" class="textbox mb-half" placeholder="number">
+            <input type="search" class="textbox mb-half" placeholder="search">
+            <input type="email" class="textbox mb-half" placeholder="email">
+            <input type="tel" class="textbox mb-half" placeholder="tel">
+            <input type="url" class="textbox mb-half" placeholder="url">
+            <input type="month" class="textbox mb-half">
+            <input type="date" class="textbox mb-half">
+            <input type="datetime-local" class="textbox mb-half">
+            <input type="time" class="textbox mb-half">
+            <input type="week" class="textbox mb-half">
+            <select class="textbox mb-half">
+                <option value="" selected disabled>select</option>
+                <option value="option">option</option>
+            </select>
+            <textarea class="textbox mb-2" placeholder="textarea"></textarea>
+            <pre class="code mb-2"><code>&lt;input type="text" class="textbox mb-half" placeholder="text"&gt;
+&lt;input type="password" class="textbox mb-half" placeholder="password"&gt;
+&lt;input type="number" class="textbox mb-half" placeholder="number"&gt;
+&lt;input type="search" class="textbox mb-half" placeholder="search"&gt;
+&lt;input type="email" class="textbox mb-half" placeholder="email"&gt;
+&lt;input type="tel" class="textbox mb-half" placeholder="tel"&gt;
+&lt;input type="url" class="textbox mb-half" placeholder="url"&gt;
+&lt;input type="month" class="textbox mb-half"&gt;
+&lt;input type="date" class="textbox mb-half"&gt;
+&lt;input type="datetime-local" class="textbox mb-half"&gt;
+&lt;input type="time" class="textbox mb-half"&gt;
+&lt;input type="week" class="textbox mb-half"&gt;
+&lt;select class="textbox mb-half"&gt;
+    &lt;option value="" selected disabled&gt;select&lt;/option&gt;
+    &lt;option value="option"&gt;option&lt;/option&gt;
+&lt;/select&gt;
+&lt;textarea class="textbox mb-2" placeholder="textarea"&gt;&lt;/textarea&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Readonly</h3>
+            <input type="text" class="textbox mb-1" placeholder="readonly" readonly>
+            <pre class="code mb-2"><code>&lt;input type="text" class="textbox" placeholder="readonly" readonly&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Disabled</h3>
+            <input type="text" class="textbox mb-1" placeholder="disabled" disabled>
+            <pre class="code mb-2"><code>&lt;input type="text" class="textbox" placeholder="disabled" disabled&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Multiple</h3>
+            <p class="mb-2">The <span class="snippet">multiple</span> attribute can be used on a <span class="snippet">select</span> element, to choose more than one option. To specify how many options to show at once, use the <span class="snippet">size</span> attribute and assign a value.</p>
+            <select class="textbox mb-2" multiple size="6">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </select>
+            <pre class="code mb-2"><code>&lt;select class="textbox mb-2" multiple size="6"&gt;
+    &lt;option value="1"&gt;1&lt;/option&gt;
+    &lt;option value="2"&gt;2&lt;/option&gt;
+    <span class="text-muted">&lt;!-- ... --&gt;</span>
+    &lt;option value="19"&gt;19&lt;/option&gt;
+    &lt;option value="20"&gt;20&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">No resize</h3>
+            <p class="mb-2">Use the <span class="snippet">.no-resize</span> class on a <span class="snippet">textarea.textbox</span> to remove the resizing handle.</p>
+            <textarea class="textbox no-resize mb-2" placeholder="no resize"></textarea>
+            <pre class="code mb-2"><code>&lt;textarea class="textbox no-resize mb-2" placeholder="no resize"&gt;&lt;/textarea&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Checkbox and Radio</h3>
+            <p class="mb-2">Sandbox wraps the checkbox and radio input elements in a <span class="snippet">label</span> with the related class name (<span class="snippet">.checkbox</span> or <span class="snippet">.radio</span>) applied. One benefit of this is that the hitbox for checking the related element includes whatever is in the <span class="snippet">label</span>.</p>
+            <div class="grid mb-2">
+                <div class="unit-12 unit-6-lg">
+                    <label class="checkbox mr-1">
+                        <input type="checkbox" name="" value="">
+                        checkbox
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="" value="">
+                        radio
+                    </label>
+                </div>
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code"><code>&lt;label class="checkbox mr-1"&gt;
+    &lt;input type="checkbox" name="" value=""&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+    &lt;input type="radio" name="" value=""&gt;
+    radio
+&lt;/label&gt;</code></pre>
+                </div>
+            </div>
+            <p class="mb-2">Unlike the <span class="snippet">.textbox</span> class, the display type for <span class="snippet">.checkbox</span> and <span class="snippet">.radio</span> is set to <span class="snippet">inline-block</span>. Make use of the <a href="{{ '/docs/utilities/display.html' | absolute_url }}" class="a">display utility classes</a> to change this behavior.</p>
+            <h3 class="mb-2 fw-bold">Checkbox and Radio switches</h3>
+            <p class="mb-2">Sandbox provides a customized checkbox and radio input. In order for it to work, the <span class="snippet">i</span> element which it uses must go immediately after the <span class="snippet">input</span> element.</p>
+            <label class="checkbox switch mr-1">
+                <input type="checkbox" name="" value="">
+                <i></i>
+                checkbox
+            </label>
+            <label class="radio switch mr-1">
+                <input type="radio" name="state" value="on">
+                <i></i>
+                radio
+            </label>
+            <label class="radio switch mb-2">
+                <input type="radio" name="state" value="off">
+                <i></i>
+                radio
+            </label>
+            <pre class="code mb-2"><code>&lt;label class="checkbox switch mr-1"&gt;
+    &lt;input type="checkbox" name="" value=""&gt;
+    &lt;i&gt;&lt;/i&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="radio switch mr-1"&gt;
+    &lt;input type="radio" name="state" value="on"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio switch"&gt;
+    &lt;input type="radio" name="state" value="off"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Disabled Checkbox and Radio</h3>
+            <label class="checkbox mr-1">
+                <input type="checkbox" disabled>
+                checkbox
+            </label>
+            <label class="checkbox switch mr-1">
+                <input type="checkbox" disabled>
+                <i></i>
+                checkbox
+            </label>
+            <label class="radio mr-1">
+                <input type="radio" disabled>
+                radio
+            </label>
+            <label class="radio switch mb-2">
+                <input type="radio" disabled>
+                <i></i>
+                radio
+            </label>
+            <pre class="code mb-2"><code>&lt;label class="checkbox mr-1"&gt;
+    &lt;input type="checkbox" disabled&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox switch mr-1"&gt;
+    &lt;input type="checkbox" disabled&gt;
+    &lt;i&gt;&lt;/i&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="radio mr-1"&gt;
+    &lt;input type="radio" disabled&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio switch"&gt;
+    &lt;input type="radio" disabled&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Font size scaling</h3>
+            <p class="mb-2">Use the <a href="{{ '/docs/utilities/font-size.html' | absolute_url}}" class="a">font size utility</a> classes to adjust the size of the controls.</p>
+            <input type="text" class="textbox mb-half h6" placeholder="text">
+            <input type="text" class="textbox mb-half h3" placeholder="text">
+            <input type="text" class="textbox mb-half h1" placeholder="text">
+            <select class="textbox mb-half h6">
+                <option value="" selected disabled>select</option>
+                <option value="">option</option>
+            </select>
+            <select class="textbox mb-half h3">
+                <option value="" selected disabled>select</option>
+                <option value="">option</option>
+            </select>
+            <select class="textbox mb-half h1">
+                <option value="" selected disabled>select</option>
+                <option value="">option</option>
+            </select>
+            <div>
+                <label class="checkbox h6 mr-1">
+                    <input type="checkbox">
+                    checkbox
+                </label>
+                <label class="checkbox switch h6">
+                    <input type="checkbox">
+                    <i></i>
+                    checkbox
+                </label>
+            </div>
+            <div>
+                <label class="checkbox h3 mr-1">
+                    <input type="checkbox">
+                    checkbox
+                </label>
+                <label class="checkbox switch h3">
+                    <input type="checkbox">
+                    <i></i>
+                    checkbox
+                </label>
+            </div>
+            <div>
+                <label class="checkbox h1 mr-1">
+                    <input type="checkbox">
+                    checkbox
+                </label>
+                <label class="checkbox switch h1">
+                    <input type="checkbox">
+                    <i></i>
+                    checkbox
+                </label>
+            </div>
+            <div>
+                <label class="radio h6 mr-1">
+                    <input type="radio" name="part-1">
+                    radio
+                </label>
+                <label class="radio switch h6">
+                    <input type="radio" name="part-1">
+                    <i></i>
+                    radio
+                </label>
+            </div>
+            <div>
+                <label class="radio h3 mr-1">
+                    <input type="radio" name="part-2">
+                    radio
+                </label>
+                <label class="radio switch h3">
+                    <input type="radio" name="part-2">
+                    <i></i>
+                    radio
+                </label>
+            </div>
+            <div class="mb-2">
+                <label class="radio h1 mr-1">
+                    <input type="radio" name="part-3">
+                    radio
+                </label>
+                <label class="radio switch h1">
+                    <input type="radio" name="part-3">
+                    <i></i>
+                    radio
+                </label>
+            </div>
+            <pre class="code mb-2"><code>&lt;input type="text" class="textbox h6 mb-half" placeholder="text"&gt;
+&lt;input type="text" class="textbox h3 mb-half" placeholder="text"&gt;
+&lt;input type="text" class="textbox h1 mb-half" placeholder="text"&gt;
+&lt;select class="textbox h6 mb-half"&gt;
+    &lt;option value="" selected disabled&gt;select&lt;/option&gt;
+    &lt;option value=""&gt;option&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class="textbox h3 mb-half"&gt;
+    &lt;option value="" selected disabled&gt;select&lt;/option&gt;
+    &lt;option value=""&gt;option&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class="textbox h1 mb-half"&gt;
+    &lt;option value="" selected disabled&gt;select&lt;/option&gt;
+    &lt;option value=""&gt;option&lt;/option&gt;
+&lt;/select&gt;
+&lt;label class="checkbox h6 mr-1"&gt;
+    &lt;input type="checkbox"&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox switch h6"&gt;
+    &lt;input type="checkbox"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox h3 mr-1"&gt;
+    &lt;input type="checkbox"&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox switch h3"&gt;
+    &lt;input type="checkbox"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox h1 mr-1"&gt;
+    &lt;input type="checkbox"&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox switch h1"&gt;
+    &lt;input type="checkbox"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="radio h6 mr-1"&gt;
+    &lt;input type="radio"&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio switch h6"&gt;
+    &lt;input type="radio"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio h3 mr-1"&gt;
+    &lt;input type="radio"&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio switch h3"&gt;
+    &lt;input type="radio"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio h1 mr-1"&gt;
+    &lt;input type="radio"&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio switch h1"&gt;
+    &lt;input type="radio"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;</code></pre>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/buttons/buttons.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/forms/field.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

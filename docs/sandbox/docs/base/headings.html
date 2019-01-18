@@ -1,0 +1,110 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Headings</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Headings</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">base</li>
+                <li class="step">headings.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">display</span><span class="tag primary">unchanged</span>
+                 </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">position</span><span class="tag primary">unchanged</span>
+                 </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">z-index</span><span class="tag primary">unchnaged</span>
+                 </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">font-size scaling</span><span class="tag info">yes</span>
+                 </span>
+                 <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag danger">no</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">Sandbox uses a <span class="snippet">1.3333</span>typography scale starting at a base of <span class="snippet">1.6rem</span>. As you'll see in later sections, font-size utility classes can be used to scale components and other elements.</p>
+            <p class="mb-2"> Naturally, the headings have the related font-size already applied. They also have a line-height of <span class="snippet">1.5</span> applied to them.</p>
+            <div class="grid">
+                <div class="unit-6 unit-12-sm">
+                    <div class="text-center mb-1">
+                        <h1>Title</h1>
+                        <h2>Title</h2>
+                        <h3>Title</h3>
+                        <h4>Title</h4>
+                        <h5>Title</h5>
+                        <h6>Title</h6>
+                    </div>
+                    
+                </div>
+                <div class="unit-6 unit-12-sm">
+                    <table class="table border-bottoms tight mb-2">
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Font Size</th>
+                            </tr>
+                        </thead>
+                        <tbody class="striped-odd">
+                            <tr>
+                                <td>
+                                    <span class="snippet">h1</span>
+                                </td>
+                                <td>3.8rem</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="snippet">h2</span>
+                                </td>
+                                <td>2.8rem</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="snippet">h3</span>
+                                </td>
+                                <td>2.1rem</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="snippet">h4, p</span>
+                                </td>
+                                <td>1.6rem</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="snippet">h5</span>
+                                </td>
+                                <td>1.2rem</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="snippet">h6, small</span>
+                                </td>
+                                <td>0.9rem</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/base/reset.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/base/a.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

@@ -1,0 +1,31 @@
+@import "../base/colors.scss";
+@import "../base/global-variables.scss";
+
+$borders-width: 0.1rem;
+$borders-color: $BORDER_COLOR;
+$borders-radius: 0.25em;
+$borders-round: $RADIUS_ROUND;
+
+.b { border: $borders-width solid $borders-color !important; }
+.bt { border-top: $borders-width solid $borders-color !important; }
+.bb { border-bottom: $borders-width solid $borders-color !important; }
+.bl { border-left: $borders-width solid $borders-color !important; }
+.br { border-right: $borders-width solid $borders-color !important; }
+
+.r { border-radius: $borders-radius !important; }
+.rtl { border-top-left-radius: $borders-radius !important; }
+.rtr { border-top-right-radius: $borders-radius !important; }
+.rbl { border-bottom-left-radius: $borders-radius !important; }
+.rbr { border-bottom-right-radius: $borders-radius !important; }
+
+.r-inherit { border-radius: inherit !important; }
+.r-round { border-radius: $borders-round !important; }
+
+
+
+
+
+
+
+
+

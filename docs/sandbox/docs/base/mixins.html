@@ -1,0 +1,31 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Mixins</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Mixins</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">base</li>
+                <li class="step">_mixins.scss</li>
+            </ul>
+            <hr class="mb-2">
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">If you've got some code you want to reuse througought the framework as a mixin, consider putting it in this file.</p>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/base/global-variables.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/base/reset.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

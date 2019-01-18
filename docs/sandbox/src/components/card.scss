@@ -1,0 +1,49 @@
+@import "../base/colors.scss";
+@import "../base/global-variables.scss";
+
+$card-border-color: $BORDER_COLOR;
+$card-background-color: $white;
+$card-radius: 0.4rem;
+$card-part-padding: 1.6rem;
+$card-part-radius: 0.3rem;
+
+// div
+.card {
+  font-size: 1.6rem;
+  border: 0.1rem solid $card-border-color;
+  border-radius: $card-radius;
+  background-color: $card-background-color;
+
+  &.r-0 {
+    .card-header, .card-body, .card-footer {
+      border-radius: 0;
+    }
+  }
+
+  // div
+  .card-header, .card-body, .card-footer {
+    padding: $card-part-padding;
+
+    &.image {
+      padding: 0;
+
+      img {
+        width: 100%;
+        display: block;
+        border-radius: inherit;
+      }
+    }
+  }
+
+  .card-header {
+    border-radius: $card-part-radius $card-part-radius 0rem 0rem;
+  }
+
+  .card-footer, .card-body:last-child {
+    border-radius: 0rem 0rem $card-part-radius $card-part-radius;
+  }
+
+  .card-body:only-child {
+    border-radius: $card-part-radius;
+  }
+}

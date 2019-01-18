@@ -1,0 +1,350 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Grid</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Grid</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">layout</li>
+                <li class="step">grid.scss</li>
+            </ul>
+            <hr class="mb-1">
+            <div class="mb-1">
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">display</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">position</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">z-index</span><span class="tag primary">unchanged</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                    <span class="tag">font-size scaling</span><span class="tag primary">n/a</span>
+                </span>
+                <span class="tags h5 mr-half mb-half">
+                     <span class="tag">breakpoints</span><span class="tag info">yes</span>
+                 </span>
+            </div>
+            <h3 class="mb-2 fw-bold">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-6-lg unit-12">
+                        <ul class="ul">
+                            <li><span class="snippet">.grid</span></li>
+                            <li><span class="snippet">.grid.tight</span></li>
+                            <li><span class="snippet">.grid.tight-(breakpoint)</span></li>
+                            <li><span class="snippet">.grid.tight.no-tight-(breakpoint)</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6-lg unit-12">
+                        <ul class="ul">
+                            <li><span class="snippet">.unit-(size)</span></li>
+                            <li><span class="snippet">.unit-(size)-(breakpoint)</span></li>
+                            <li><span class="snippet">.push-(size)</span></li>
+                            <li><span class="snippet">.push-(size)-(breakpoint)</span></li>
+                            <li><span class="snippet">.clearfix</span></li>
+                            <li><span class="snippet">.new-line</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">Sandbox uses a float based 12 unit grid system. The <span class="snippet">.grid</span> class can be applied to any block level element. A <span class="snippet">.grid</span> should have block level elements with either the <span class="snippet">.unit-</span> related classes or a <span class="snippet">.new-line</span> as immediate children</p>
+            <div class="card b-0 mb-2">
+                <div class="card-body info">
+                    <p>The <span class="snippet">.grid</span> can easily make use of flexbox by using the <span class="snippet">.flex</span> <a href="{{ '/docs/utilities/display.html' | absolute_url }}" class="a">display utility</a> class, as well as the other <a href="{{ '/docs/layout/flexbox.html' | absolute_url }}" class="a">flexbox classes</a>.</p>
+                </div>
+            </div>
+            <p class="mb-2">Since the default <span class="snippet">$GRID_SYSTEM</span> global variable is set to 12, the values from <span class="snippet">1</span> through <span class="snippet">12</span> can be plugged in where <span class="snippet">(size)</span> is seen above. Similarly the breakpoint suffixes <span class="snippet">sm</span>, <span class="snippet">md</span>, <span class="snippet">lg</span> can be plugged in where <span class="snippet">(breakpoint)</span> is seen above</p>
+            <div class="grid mb-2">
+                <div class="unit-12">
+                    <div class="p-1 r primary text-center">
+                        <p>unit-12</p>
+                    </div>
+                </div>
+                <div class="unit-6">
+                    <div class="p-1 r primary text-center">
+                        <p>unit-6</p>
+                    </div>
+                </div>
+                <div class="unit-6">
+                    <div class="p-1 r primary text-center">
+                        <p>unit-6</p>
+                    </div>
+                </div>
+                <div class="unit-4">
+                    <div class="p-1 r primary text-center">
+                        <p>unit-4</p>
+                    </div>
+                </div>
+                <div class="unit-4">
+                    <div class="p-1 r primary text-center">
+                        <p>unit-4</p>
+                    </div>
+                </div>
+                <div class="unit-4">
+                    <div class="p-1 r primary text-center">
+                        <p>unit-4</p>
+                    </div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-1 r primary text-center">
+                        <p>unit-3</p>
+                    </div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-1 r primary text-center">
+                        <p>unit-3</p>
+                    </div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-1 r primary text-center">
+                        <p>unit-3</p>
+                    </div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-1 r primary text-center">
+                        <p>unit-3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card b-0 mb-2">
+                <div class="card-body info">
+                    <p>If you decided to set the <span class="snippet">$GRID_SYSTEM</span> global variable to something like <span class="snippet">6</span> and run a build, the values <span class="snippet">1</span> through <span class="snippet">6</span> could be used where <span class="snippet">(size)</span> is seen.</p>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">Structure</h3>
+            <pre class="code mb-2"><code>&lt;div class="grid"&gt;
+    &lt;div class="unit-12"&gt;<span class="text-muted"> your content... </span>&lt;/div&gt;
+    &lt;div class="unit-6"&gt;<span class="text-muted"> your content... </span>&lt;/div&gt;
+    &lt;div class="unit-6"&gt;<span class="text-muted"> your content... </span>&lt;/div&gt;
+    &lt;div class="unit-4"&gt;<span class="text-muted"> your content... </span>&lt;/div&gt;
+    <span class="text-muted">&lt;&excl;-- and so on... --&gt;</span>
+&lt;/div&gt;</code></pre>
+            <p class="mb-2">Since Sandbox's grid system is float based, any units whose width exceeds the width remaining for that line, will wrap onto the next line (<a href="#newLine" class="a">typically</a>). This means that you can put as many units as you want inside of a single grid.</p>
+            <div class="card b-0 mb-2">
+                <div class="card-body info">
+                    <p>Keep in mind that the width of each unit is just a percentage out of the total grid system value. For example, a <span class="snippet">.unit-6</span> out of a 12 unit grid system would have a width of <span class="snippet">50%</span>. A <span class="snippet">.unit-3</span> out of a 12 unit grid system would have a width of <span class="snippet">25%</span>, and so on.</p>
+                </div>
+            </div>
+            <h3 class="mb-2 fw-bold">The grid class</h3>
+            <p class="mb-2">The <span class="snippet">.grid</span> class uses a negative margin on all sides so that the units used within it align with whatever content neighbors the <span class="snippet">.grid</span> itself. For this reason the <span class="snippet"> .grid</span> should be used inside of an element that has sufficient padding.</p>
+
+            <h3 class="mb-2 fw-bold">Grid tight</h3>
+            <p class="mb-2">Using <span class="snippet">.grid.tight</span> halves the margin value used by the <span class="snippet">.grid</span> and also halves the padding of any units used inside of it.</p>
+            <div class="grid tight mb-2">
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1"></div>
+                </div>
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1"></div>
+                </div>
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1"></div>
+                </div>
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1"></div>
+                </div>
+            </div>
+            <p class="mb-2">The <span class="snippet">.tight-(breakpoint)</span> class means that the grid will only be tight during that breakpoint. Using <span class="snippet">.no-tight-(breakpoint)</span> on a <span class="snippet">.grid.tight</span> will cancel out the <span class="snippet">.tight</span> during the specified breakpoint.</p>
+            <h3 class="mb-2 fw-bold">Grid units</h3>
+            <p class="mb-2">Any element whose class list contains <span class="snippet">unit-</span> will be floated left and have padding set on all sides equal to the margin value that the grid negates. There's no requirement that a unit be used within a grid, so if you wanted to use a unit elsewhere, you could.</p>
+            <h3 class="mb-2 fw-bold">Responsive</h3>
+            <p class="mb-2">Use <span class="snippet">.unit-(size)-(breakpoint)</span> to specify what size a unit should be during the specified breakpoint. Change the width of your browser to see the responsiveness in action.</p>
+            <div class="grid">
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1 text-center">
+                        <p class="absent-md absent-lg">unit-12-sm</p>
+                        <p class="absent-sm absent-lg">unit-6-md</p>
+                        <p class="absent-sm absent-md">unit-3-lg</p>
+                    </div>
+                </div>
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1 text-center">
+                        <p class="absent-md absent-lg">unit-12-sm</p>
+                        <p class="absent-sm absent-lg">unit-6-md</p>
+                        <p class="absent-sm absent-md">unit-3-lg</p>
+                    </div>
+                </div>
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1 text-center">
+                        <p class="absent-md absent-lg">unit-12-sm</p>
+                        <p class="absent-sm absent-lg">unit-6-md</p>
+                        <p class="absent-sm absent-md">unit-3-lg</p>
+                    </div>
+                </div>
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1 text-center">
+                        <p class="absent-md absent-lg">unit-12-sm</p>
+                        <p class="absent-sm absent-lg">unit-6-md</p>
+                        <p class="absent-sm absent-md">unit-3-lg</p>
+                    </div>
+                </div>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="grid"&gt;
+    &lt;div class="unit-12-sm unit-6-md unit-3-lg"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="unit-12-sm unit-6-md unit-3-lg"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="unit-12-sm unit-6-md unit-3-lg"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="unit-12-sm unit-6-md unit-3-lg"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Default unit</h3>
+            <p class="mb-2">Using a <span class="snippet">.unit-(size)</span> means that it's not bound to a breakpoint. The breakpoint specific unit classes are more specific, so they will have priority over any unit that is not bound to a breakpoint. Change the width of your browser to see the example in action.</p>
+            <div class="grid">
+                <div class="unit-12 unit-6-md">
+                    <div class="r primary p-1 text-center">
+                        <p class="absent-md absent-lg">unit-12</p>
+                        <p class="absent-sm absent-lg">unit-6-md</p>
+                        <p class="absent-sm absent-md">unit-12</p>
+                    </div>
+                </div>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="grid"&gt;
+    &lt;div class="unit-12 unit-6-md"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Push</h3>
+            <p class="mb-2">Using the <span class="snippet">.push-(size)</span> classes sets the margin left of the element to a percentage equal to that size out of the <span class="snippet">$GRID_SYSTEM</span> value. For example using <span class="snippet">.push-3</span> out of a 12 unit grid system would set a margin-left of <span class="snippet">25%</span>.</p>
+            <div class="grid mb-2">
+                <div class="unit-12">
+                    <div class="r primary p-1 text-center">
+                        <p>unit-12</p>
+                    </div>
+                </div>
+                <div class="unit-6 push-3">
+                    <div class="r primary p-1 text-center">
+                        <p>unit-6</p>
+                    </div>
+                </div>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="grid"&gt;
+    &lt;div class="unit-12"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="unit-6 push-3"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Push responsive</h3>
+            <p class="mb-2">Using <span class="snippet">.push-(size)-(breakpoint)</span> means that the element will be pushed by the size amount during the specified breakpoint.</p>
+            <div class="grid mb-2">
+                <div class="unit-12">
+                    <div class="r primary p-1 text-center">
+                        <p>unit-12</p>
+                    </div>
+                </div>
+                <div class="unit-3 push-3-sm push-6-md push-9-lg">
+                    <div class="r primary p-1 text-center">
+                        <p>unit-3</p>
+                    </div>
+                </div>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="grid"&gt;
+    &lt;div class="unit-12"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="unit-3 push-3-sm push-6-md push-9-lg"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h3 id="newLine"class="mb-2 fw-bold">New line</h3>
+            <p class="mb-2">A downside to floating elements is that they will try to fit onto the same line if there's enough width for them to do so. For example, say we want the last <span class="snippet">.unit-6</span> to start on it's own line, but due to the height of the units before it, it finds that it can still fit on the same line.</p>
+            <div class="grid mb-2">
+                <div class="unit-6">
+                    <div class="r primary p-1 text-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum veniam obcaecati ut, iste consectetur vero a optio dicta, nostrum dolores magnam officia, quos quidem sint dolore ipsa, eius dolorem commodi repellat fugit facere suscipit rerum similique. Sit, quo fugiat saepe.</p>
+                    </div>
+                </div>
+                <div class="unit-6">
+                    <div class="r primary p-1 text-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda vero distinctio, facere!</p>
+                    </div>
+                </div>
+                <div class="unit-6">
+                    <div class="r primary p-1 text-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, tempora.</p>
+                    </div>
+                </div>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="grid"&gt;
+    &lt;div class="unit-6"&gt;
+        <span class="text-muted">&lt;!-- taller content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="unit-6"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="unit-6"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <p class="mb-2">We can work around this problem by using a <span class="snippet">.new-line</span>. The new line forces any floated elements beneath it to start on a new line. </p>
+            <div class="grid mb-2">
+                <div class="unit-6">
+                    <div class="r primary p-1 text-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum veniam obcaecati ut, iste consectetur vero a optio dicta, nostrum dolores magnam officia, quos quidem sint dolore ipsa, eius dolorem commodi repellat fugit facere suscipit rerum similique. Sit, quo fugiat saepe.</p>
+                    </div>
+                </div>
+                <div class="unit-6">
+                    <div class="r primary p-1 text-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda vero distinctio, facere!</p>
+                    </div>
+                </div>
+                <div class="new-line"></div>
+                <div class="unit-6">
+                    <div class="r primary p-1 text-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, tempora.</p>
+                    </div>
+                </div>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="grid"&gt;
+    &lt;div class="unit-6"&gt;
+        <span class="text-muted">&lt;!-- taller content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="unit-6"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="new-line"&gt;&lt;/div&gt;
+    &lt;div class="unit-6"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Nesting</h3>
+            <p class="mb-2">If you want to nest grids inside one another, to pattern to do so is:</p>
+            <pre class="code mb-2"><code>&lt;div class="grid"&gt;
+    &lt;div class="unit-6"&gt;<span class="text-muted">&lt;!-- choose whatever size you want --&gt;</span>
+        &lt;div class="grid"&gt;
+            &lt;div class="unit-12"&gt;<span class="text-muted">&lt;!-- choose whatever size you want --&gt;</span>
+                <span class="text-muted">&lt;!-- etc... --&gt;</span>
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Clearfix</h3>
+            <p class="mb-2">The <span class="snippet">.grid</span> class already has clearfix code applied, but if you wanted to clearfix some other element, use the <span class="snippet">.clearfix</span> class.</p>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/base/table.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/layout/position-presets.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}    
+</body>
+</html>

@@ -1,0 +1,126 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <title>Global Variables</title>
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Global Variables</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">base</li>
+                <li class="step">_global-variables.scss</li>
+            </ul>
+            <hr class="mb-2">
+            <h3 class="mb-2 fw-bold">Description</h3>
+            <p class="mb-2">If you're customizing sandbox, the global variables file is the place to start. Here you can set the font stack, font color, and other settings used throughout the framework.</p>
+            <div class="ox-auto">
+                <table class="table border-bottoms mb-3">
+                    <thead>
+                        <tr>
+                            <th>Identifier</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody class="striped-odd">
+                        <tr>
+                            <td>
+                                <span class="snippet">$FONT_STACK</span>
+                            </td>
+                            <td>-apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$FONT_COLOR</span>
+                            </td>
+                            <td>
+                                <span class="snippet">$alpha-black</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$BODY_BACKGROUND_COLOR</span>
+                            </td>
+                            <td>rgb(250, 250, 250)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$BORDER_COLOR</span>
+                            </td>
+                            <td>
+                                <span class="snippet">$medium-white</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$BORDER_ACTIVE_COLOR</span>
+                            </td>
+                            <td>
+                                <span class="snippet">$dark-white</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$GRID_SYSTEM</span>
+                            </td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$UNIT_SPACING</span>
+                            </td>
+                            <td>1.2rem</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$SPACING_LEVELS</span>
+                            </td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$RADIUS_ROUND</span></td>
+                            <td>200em</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$BUTTON_BORDER_RADIUS</span>
+                            </td>
+                            <td>0.1875em</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$CONTROL_HEIGHT</span>
+                            </td>
+                            <td>2.25em</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$CONTROL_SHADOW_SPREAD</span>
+                            </td>
+                            <td>0.1875em</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snippet">$DISABLED_OPACITY</span>
+                            </td>
+                            <td>0.5</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/base/colors.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/base/mixins.html' | absolute_url }}" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
+</body>
+</html>

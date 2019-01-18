@@ -1,0 +1,20 @@
+@import "./colors.scss";
+
+$FONT_STACK: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$FONT_COLOR: $alpha-black;
+$BODY_BACKGROUND_COLOR: rgb(250, 250, 250);
+
+$BORDER_COLOR: $medium-white;
+$BORDER_ACTIVE_COLOR: $dark-white;
+
+$GRID_SYSTEM: 12;
+$UNIT_SPACING: 1.2rem;
+$SPACING_LEVELS: 4;
+
+$RADIUS_ROUND: 200em;
+$BUTTON_BORDER_RADIUS: 0.1875em;
+
+$CONTROL_HEIGHT: 2.25em;
+$CONTROL_SHADOW_SPREAD: 0.1875em;
+
+$DISABLED_OPACITY: 0.5;

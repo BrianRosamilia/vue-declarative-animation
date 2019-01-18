@@ -1,0 +1,20 @@
+<div class="navbar flex between cross-center relative">
+    <div>
+        <a href="{{ '/index.html' | absolute_url}}" class="navbar-item">Sandbox</a>
+        <a href="{{ '/docs/get-started.html' | absolute_url}}" class="navbar-item">Get Started</a>
+        <a href="{{ '/docs/base/breakpoint-values.html' | absolute_url}}" class="navbar-item">Docs</a>
+    </div>
+    <div>
+        <div class="navbar-item absent-sm">
+            <button class="button toggle-side-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="navbar-item absent-md absent-lg">
+            <button class="button toggle-top-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            {% include top-menu.html %}
+        </div>
+    </div>
+</div>
