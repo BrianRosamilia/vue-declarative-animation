@@ -199,6 +199,7 @@
     body {
         padding-top: 2em;
         perspective: 800px;
+        background-image: linear-gradient(45deg, RGBA(232,149,12, .9), RGBA(132,222,243, .9));
     }
 
     h2 {
@@ -215,6 +216,8 @@
         padding-left: 3rem;
         padding-right: 3rem;
         padding-bottom: 3rem;
+        margin-bottom:3rem;
+        border-radius: 5px;
     }
 
     .center {
