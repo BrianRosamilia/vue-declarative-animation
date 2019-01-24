@@ -4197,6 +4197,7 @@ h2 {
 
 .prism-editor-wrapper {
     margin-top: 1.7rem;
+    font-size:1.2em;
 }
 
 .toggle {
@@ -4210,4 +4211,22 @@ h2 {
 
 .icon {
     max-width: 32px;
+}
+
+.api-component-doc{
+    margin-top:2rem;
+    margin-left:2rem;
+    margin-bottom:1rem;
+}
+
+.huge-3{
+    font-size:4.2rem;
+}
+
+.indent{
+    margin-left:2em;
+}
+
+.shoutout{
+    margin-top:5rem;
 }

@@ -7,6 +7,14 @@
         <a target="_blank" href="https://www.npmjs.com/package/vue-declarative-animation">
             <p class="code snippet install">npm install vue-declarative-animation</p>
         </a>
+        <br/>
+        <p class="code snippet install">import { animated, animation } from 'vue-declarative-animation';</p>
+        <br/>
+        <p>
+            An experiment at a fully declarative animation library in Vue.js.  Implemented as a template-based wrapper around <a target="_blank" href="http://velocityjs.org/">Velocity.js</a>
+        </p>
+        <br/>
+        <br/>
         <h3>Example</h3>
         <hr>
         <div class="example">
@@ -117,6 +125,29 @@
             <prism-editor :code="codeContinuationNoLoop" language="vue"></prism-editor>
 
             <p>To do event based animations, you need to use <pre class="code snippet">$refs</pre> at the moment, but anything involving <pre class="code snippet">v-for</pre> or <pre class="code snippet">v-if</pre> shouldn't require programmatic animations 🎉</p>
+        </div>
+
+        <h3>Component API Props</h3>
+        <hr>
+        <div class="example">
+            <h4 class="code huge-3 snippet">Animated</h4>
+            <div class="api-component-doc">
+                <p class="code snippet">:initial (Object)</p><p class="indent">Similar to binding <span class="code snippet">style</span>, but it applies this styling to all children and properties can be reset back to initial by calling <span class="code snippet">reset()</span></p>
+                <p class="code snippet">:continuation-loop (Boolean)</p><p class="indent">Whether or not the animations contained in <span class="code snippet">Animated</span> should loop</p>
+                <p class="code snippet">:auto-play (Boolean)</p><p class="indent">Whether or not the animations contained in <span class="code snippet">Animated</span> should play automatically on load</p>
+            </div>
+            <h4 class="code huge-3 snippet">Animation</h4>
+            <div class="api-component-doc">
+                <p class="code snippet">:properties (Object | String)</p><p class="indent">An Object as a map of styles (or a String of styles, <span class="code snippet">;</span> separated) that declares the properties to animate</p>
+                <p class="code snippet">:delay (Number)</p><p class="indent">Millisecond delay of the animation</p>
+                <p class="code snippet">:duration (Number)</p><p class="indent">Millisecond length of the animation</p>
+                <p class="code snippet">:loop (Number | Boolean)</p><p class="indent">If a number, the number of times to loop. If a boolean, whether or not to loop.  Default is false.</p>
+                <p class="code snippet">:easing (String)</p><p class="indent">A Velocity.js easing function.  <a href="https://easings.net/">List of options here</a></p>
+                <p class="code snippet">:completed (Object)</p><p class="indent">An Object as a map of styles to be set on completion</p>
+            </div>
+        </div>
+        <div class="center-text fs-italic shoutout">
+            <p>Shout out the Sandbox CSS / Sass framework that powers this documentation. <a target="_blank" href="https://dlcnine.github.io/sandbox">Check it out here</a></p>
         </div>
     </div>
 </template>
@@ -267,6 +298,7 @@
 
     .prism-editor-wrapper {
         margin-top: 1.7rem;
+        font-size:1.2em;
     }
 
     .toggle {
@@ -280,5 +312,23 @@
 
     .icon {
         max-width: 32px;
+    }
+
+    .api-component-doc{
+        margin-top:2rem;
+        margin-left:2rem;
+        margin-bottom:1rem;
+    }
+
+    .huge-3{
+        font-size:4.2rem;
+    }
+
+    .indent{
+        margin-left:2em;
+    }
+
+    .shoutout{
+        margin-top:5rem;
     }
 </style>

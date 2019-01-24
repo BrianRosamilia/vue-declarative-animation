@@ -8,7 +8,7 @@ A declarative Vue template wrapper around [Velocity.js](http://velocityjs.org/)
 
 `npm install vue-declarative-animation`
 
-`import { animated, animation } from 'vue-declarative-animation'`
+`import { animated, animation } from 'vue-declarative-animation';`
 
 In your Vue component: 
 

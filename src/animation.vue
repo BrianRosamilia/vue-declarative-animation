@@ -4,7 +4,6 @@
             properties: [Object, String],
             delay: Number,
             duration: Number,
-            event: String,
             loop: [Number, Boolean],
             easing: { type: String, default: 'linear' },
             completed: Object
