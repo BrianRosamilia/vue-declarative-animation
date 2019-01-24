@@ -15,6 +15,6 @@ In your Vue component:
 ```
 components: {
     animated,
-    animation,
+    animation
 }
 ```

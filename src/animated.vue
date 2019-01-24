@@ -1,5 +1,5 @@
 <template>
-    <div class="animated-d" :style="{ display: containerDisplay }">
+    <div class="animated-d">
         <slot></slot>
     </div>
 </template>
@@ -19,8 +19,7 @@
         props: {
             initial: Object,
             autoPlay: { type: Boolean, default: true },
-            continuationLoop: { type: Boolean, default: true },
-            containerDisplay: String
+            continuationLoop: { type: Boolean, default: true }
         },
         methods: {
            play(frame){
@@ -93,6 +92,6 @@
 </script>
 <style scoped>
 .animated-d{
-    display:inline-block;
+    display:inherit;
 }
 </style>

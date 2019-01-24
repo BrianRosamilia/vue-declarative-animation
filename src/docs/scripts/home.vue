@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <animated :initial="{ opacity: 0 }" :container-display="'block'">
+        <animated :initial="{ opacity: 0 }">
             <animation v-bind:properties="{ opacity: 1 }" v-bind:duration="1500"></animation>
             <h2>Vue.js Declarative Animation</h2>
         </animated>
@@ -8,13 +8,13 @@
         <h3>Example</h3>
         <hr>
         <div class="example">
-                <animated class="center" :initial="{ opacity: 0 }" :container-display="'block'">
+                <animated class="center" :initial="{ opacity: 0 }">
                     <animation :properties="{ fontSize: '50px', opacity:1 }" :duration="600"></animation>
                     <animation :properties="{ opacity:0 }" :duration="600" :delay="3000"></animation>
                     <animation :properties="{ fontSize: '0px' }" :duration="600"></animation>
                     <p>Simple Vue.js animations</p>
                 </animated>
-                <animated class="center" :initial="{ opacity: 0 }" :container-display="'block'">
+                <animated class="center" :initial="{ opacity: 0 }">
                     <animation :properties="{ fontSize: '90px', opacity:1 }" :duration="600"></animation>
                     <img class="vue-logo" src="/images/vue_logo.svg">
                 </animated>
@@ -36,7 +36,7 @@
         <div class="example">
             <button class="button pointer example-btn info" @click="showAnim = !showAnim">Toggle Animation</button>
             <div v-if="showAnim" class="center-text">
-                <animated :initial="{ backgroundColor: '#35495e', height: '20px', width:'0%' }" :container-display="'block'">
+                <animated :initial="{ backgroundColor: '#35495e', height: '20px', width:'0%' }">
                     <animation :properties="{ width:'100%' }" :duration="1000"></animation>
                     <animation :properties="{ opacity:'0' }" :duration="1000"></animation>
                     <animation :completed="{ display: 'none' }"></animation>
@@ -54,7 +54,7 @@
 
         <h3>List Example</h3>
         <hr>
-        <button class="button example-btn info" @click="cards.push(0)">Add Card</button>
+        <button class="button example-btn info" @click="cards += 1">Add Card</button>
         <div class="example">
             <nav class="navbar primary flex between cross-center">
                 <div>
@@ -131,14 +131,14 @@
             return {
                 showAnim: false,
                 showMenu: false,
-                cards: [0, 0, 0, 0],
-                codeIntro: `<animated class="center" :initial="{ opacity: 0 }" :container-display="'block'">
+                cards: 4,
+                codeIntro: `<animated class="center" :initial="{ opacity: 0 }">
     <animation :properties="{ fontSize: '50px', opacity:1 }" :duration="600"></animation>
     <animation :properties="{ opacity:0 }" :duration="600" :delay="3000"></animation>
     <animation :properties="{ fontSize: '0px' }" :duration="600"></animation>
     <p>Simple Vue.js animations</p>
 </animated>
-<animated class="center" :initial="{ opacity: 0 }" :container-display="'block'">
+<animated class="center" :initial="{ opacity: 0 }">
     <animation :properties="{ fontSize: '90px', opacity:1 }" :duration="600"></animation>
     <img class="vue-logo" src="/images/vue_logo.svg">
 </animated>`,
@@ -148,7 +148,7 @@
 </animated>`,
                 codeReveal: `<button class="button pointer example-btn info" @click="showAnim = !showAnim">Toggle Animation</button>
 <div v-if="showAnim" class="center-text">
-    <animated :initial="{ backgroundColor: '#35495e', height: '20px', width:'0%' }" :container-display="'block'">
+    <animated :initial="{ backgroundColor: '#35495e', height: '20px', width:'0%' }">
         <animation :properties="{ width:'100%' }" :duration="1000"></animation>
         <animation :properties="{ opacity:'0' }" :duration="1000"></animation>
         <animation :completed="{ display: 'none' }"></animation>
@@ -258,8 +258,9 @@
     .swatch{
         background-color:#0000FF;
         margin-left:2rem;
-        min-width:150px;
-        min-height:150px;
+        margin-top:1rem;
+        max-width:150px;
+        height:150px;
     }
 
     .prism-editor-wrapper {

@@ -3989,7 +3989,7 @@ button {
     max-width: 1280px;
   }
 }.animated-d[data-v-920133]{
-    display:inline-block;
+    display:inherit;
 }/**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -4190,8 +4190,9 @@ h2 {
 .swatch{
     background-color:#0000FF;
     margin-left:2rem;
-    min-width:150px;
-    min-height:150px;
+    margin-top:1rem;
+    max-width:150px;
+    height:150px;
 }
 
 .prism-editor-wrapper {
