@@ -130,13 +130,13 @@
         <h3>Component API Props</h3>
         <hr>
         <div class="example">
-            <h4 class="code huge-3 snippet">Animated</h4>
+            <h4 class="code h3 snippet">Animated</h4>
             <div class="api-component-doc">
                 <p class="code snippet">:initial (Object)</p><p class="indent">Similar to binding <span class="code snippet">style</span>, but it applies this styling to all children and properties can be reset back to initial by calling <span class="code snippet">reset()</span></p>
                 <p class="code snippet">:continuation-loop (Boolean)</p><p class="indent">Whether or not the animations contained in <span class="code snippet">Animated</span> should loop</p>
                 <p class="code snippet">:auto-play (Boolean)</p><p class="indent">Whether or not the animations contained in <span class="code snippet">Animated</span> should play automatically on load</p>
             </div>
-            <h4 class="code huge-3 snippet">Animation</h4>
+            <h4 class="code h3 snippet">Animation</h4>
             <div class="api-component-doc">
                 <p class="code snippet">:properties (Object | String)</p><p class="indent">An Object as a map of styles (or a String of styles, <span class="code snippet">;</span> separated) that declares the properties to animate</p>
                 <p class="code snippet">:delay (Number)</p><p class="indent">Millisecond delay of the animation</p>
