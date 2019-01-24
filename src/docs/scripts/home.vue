@@ -4,7 +4,9 @@
             <animation v-bind:properties="{ opacity: 1 }" v-bind:duration="1500"></animation>
             <h2>Vue.js Declarative Animation</h2>
         </animated>
-        <p class="code snippet install">npm install vue-declarative-animation</p>
+        <a target="_blank" href="https://www.npmjs.com/package/vue-declarative-animation">
+            <p class="code snippet install">npm install vue-declarative-animation</p>
+        </a>
         <h3>Example</h3>
         <hr>
         <div class="example">
