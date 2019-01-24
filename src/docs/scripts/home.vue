@@ -147,7 +147,7 @@
             </div>
         </div>
         <div class="center-text fs-italic shoutout">
-            <p>Shout out the Sandbox CSS / Sass framework that powers this documentation. <a target="_blank" href="https://dlcnine.github.io/sandbox">Check it out here</a></p>
+            <p>Shout out to the Sandbox CSS / Sass framework that powers this documentation. <a target="_blank" href="https://dlcnine.github.io/sandbox">Check it out here</a></p>
         </div>
     </div>
 </template>
