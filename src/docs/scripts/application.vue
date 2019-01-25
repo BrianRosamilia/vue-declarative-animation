@@ -28,4 +28,10 @@
         }
     }
 
+    @media (max-width: 900px){
+        .container {
+            max-width:90%;
+        }
+    }
+
 </style>

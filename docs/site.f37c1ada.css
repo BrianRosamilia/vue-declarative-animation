@@ -3988,6 +3988,11 @@ button {
   .container {
     max-width: 1280px;
   }
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 90%;
+  }
 }.animated-d[data-v-920133]{
     display:inherit;
 }/**
