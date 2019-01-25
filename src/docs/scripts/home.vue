@@ -26,7 +26,7 @@
                 </animated>
                 <animated class="center" :initial="{ opacity: 0 }">
                     <animation :properties="{ fontSize: '90px', opacity:1 }" :duration="600"></animation>
-                    <img class="vue-logo" src="/images/vue_logo.svg">
+                    <img class="vue-logo" src="/images/vue_logo.png">
                 </animated>
             <prism-editor :code="codeIntro" language="vue"></prism-editor>
         </div>
@@ -173,7 +173,7 @@
 </animated>
 <animated class="center" :initial="{ opacity: 0 }">
     <animation :properties="{ fontSize: '90px', opacity:1 }" :duration="600"></animation>
-    <img class="vue-logo" src="/images/vue_logo.svg">
+    <img class="vue-logo" src="/images/vue_logo.png">
 </animated>`,
                 codeBounce: `<animated>
     <animation :properties="{ translateY:'10px' }" :duration="500" :loop="true" :easing="'easeInBack'"></animation>
