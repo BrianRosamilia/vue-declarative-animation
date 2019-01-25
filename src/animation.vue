@@ -5,7 +5,7 @@
             delay: Number,
             duration: Number,
             loop: [Number, Boolean],
-            easing: { type: String, default: 'linear' },
+            easing: { type: String, default: 'easeInSine' },
             completed: Object
         },
         render(h){

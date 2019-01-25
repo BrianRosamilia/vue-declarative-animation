@@ -15763,7 +15763,7 @@ var _default = {
     loop: [Number, Boolean],
     easing: {
       type: String,
-      default: 'linear'
+      default: 'easeInSine'
     },
     completed: Object
   },
@@ -19429,4 +19429,4 @@ window.onload = function () {
   });
 };
 },{"vue":"EjOG","vue-router":"Gegd","./application.vue":"0RWL","./home.vue":"rh5K"}]},{},["QwA3"], null)
-//# sourceMappingURL=site.cefb49dd.map
+//# sourceMappingURL=site.0ff7bcf4.map
