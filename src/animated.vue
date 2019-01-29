@@ -44,7 +44,7 @@
                 const eventFn = () => {
                     Array.prototype.forEach.call(this.$el.children, el => {
                         if(a.componentInstance.$props.completed){
-                            completedProps = { ...a.componentInstance.$props.completed };
+                            completedProps = { ...completedProps, ...a.componentInstance.$props.completed };
                         }
                         else{
                             velocity(el, a.componentInstance.$props.properties, {
